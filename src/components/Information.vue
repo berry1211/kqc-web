@@ -1,6 +1,7 @@
 <template>
-  <div id="hello">
+  <div id="information">
     <h1>{{ msg }}</h1>
+    <h2>{{ msg_sub }}</h2>
   </div>
 </template>
 
@@ -9,7 +10,8 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to KQC'
+      msg: 'Welcome to KQC',
+      msg_sub: 'Information'
     }
   }
 }

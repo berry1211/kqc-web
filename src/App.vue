@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <router-link to="/information">インフォメーション</router-link>
   </div>
 </template>
 
