@@ -1,7 +1,6 @@
 <template>
   <div id="intro">
-    <h1>{{ msg }}</h1>
-    <h2>{{ msg_sub }}</h2>
+
   </div>
 </template>
 
@@ -15,7 +14,7 @@ export default {
     }
   },
   created: function(){
-      document.title = '紹介 | KQC'
+    document.title = '紹介 | KQC'
   }
 }
 </script>
@@ -26,8 +25,8 @@ h1, h2 {
   font-weight: normal;
 }
 
-#hello{
-    height: 800px;
+#intro{
+  height: 800px;
 }
 
 a {
@@ -35,7 +34,7 @@ a {
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 </style>

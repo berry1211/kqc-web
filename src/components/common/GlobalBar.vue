@@ -1,16 +1,20 @@
 <template>
-  <div id="footer">
-      <div class="copy-right-wrapper">
-          <p class="copy-right">
-              Copyright (c) 2017 Ha10 ( Yasunori Horii ). All Rights Reserved
-          </p>
+  <div id="global-bar">
+    <div class="global-bar-wrapper">
+      <div class="global-bar-container">
+        <router-link to="/intro" class="bar-content"><p>紹介</p></router-link>
+        <router-link to="/schedule" class="bar-content"><p>予定</p></router-link>
+        <router-link to="/contest-result" class="bar-content"><p>試合結果</p></router-link>
+        <router-link to="/members" class="bar-content"><p>会員専用</p></router-link>
+        <router-link to="/links" class="bar-content"><p>リンク</p></router-link>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'footer',
+  name: 'global-bar',
   data () {
     return {
     }
@@ -24,26 +28,50 @@ h1, h2 {
   font-weight: normal;
 }
 
-#footer{
-    height: 120px;
-    width: 100%;
-    background: #424242;
+#global-bar{
+  height: 48px;
+  width: 100%;
+  background: #535353;
 }
-
-.copy-right-wrapper{
+.global-bar-wrapper{
+  display: block;
+  width: 480px;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
 }
-.copy-right{
-    padding-top: 36px;
-    color: #ffffff;
-    font-size: 16px;
+.global-bar-container{
+  width: inherit;
+  height: inherit;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bar-content{
+  height: inherit;
+  line-height: 48px;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+.bar-content :hover{
+  background: #444444;
+}
+.bar-content p{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: bold;
 }
 
 a {
-  color: #42b983;
+  color: #e0e0e0;
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="information">
+  <div id="links">
     <h1>{{ msg }}</h1>
     <h2>{{ msg_sub }}</h2>
   </div>
@@ -7,15 +7,15 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'links',
   data () {
     return {
       msg: 'Welcome to KQC',
-      msg_sub: 'Information'
+      msg_sub: 'Links'
     }
   },
   created: function(){
-    document.title = 'インフォメーション | 会員用'
+    document.title = 'リンク | KQC'
   }
 }
 </script>
@@ -26,17 +26,16 @@ h1, h2 {
   font-weight: normal;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
+#links{
+  height: 800px;
 }
 
 a {
-  color: #42b983;
+  color: #424242;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
 }
 </style>

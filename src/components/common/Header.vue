@@ -1,21 +1,17 @@
 <template>
-  <div id="hello">
-    <h1>{{ msg }}</h1>
-    <h2>{{ msg_sub }}</h2>
+  <div id="header">
+    <div class="header-content-wrapper">
+
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'header',
   data () {
     return {
-      msg: 'Welcome to KQC',
-      msg_sub: 'Schedule'
     }
-  },
-  created: function(){
-    document.title = '予定 | KQC'
   }
 }
 </script>
@@ -26,15 +22,17 @@ h1, h2 {
   font-weight: normal;
 }
 
-#hello{
-  height: 800px;
+#header{
+  height: 60px;
+  width: 100%;
+  background: #424242;
 }
 
 a {
-  color: #424242;
+  color: #42b983;
 }
 
-body{
+*{
   margin: 0px;
   padding: 0px;
 }
