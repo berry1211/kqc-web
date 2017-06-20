@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
     <h2>{{ msg_sub }}</h2>
     <router-link to="/members">会員専用</router-link>
+    <router-link to="/schedule">予定</router-link>
   </div>
 </template>
 

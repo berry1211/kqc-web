@@ -8,6 +8,9 @@ import ClubMembers from '@/components/members/ClubMember'
 // 共通要素
 import Footer from '@/components/common/Footer'
 
+// グローバルメニュー(常に表示されているメニュー)要素
+import Schedule from '@/components/menu/Schedule'
+
 Vue.use(Router)
 
 export default new Router({
@@ -42,6 +45,15 @@ export default new Router({
       components: {
           default: ClubMembers,
           footer: Footer
+      }
+    },
+    {
+      path: '/schedule',
+      name: 'Schedule',
+      components: {
+          default: Schedule,
+          footer: Footer
+
       }
     }
   ]
