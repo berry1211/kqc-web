@@ -6,6 +6,7 @@ import Rules from '@/components/members/Rules'
 
 // 共通要素
 import Footer from '@/components/common/Footer'
+import Header from '@/components/common/Header'
 
 // グローバルメニュー(常に表示されているメニュー)要素
 import Schedule from '@/components/menu/Schedule'
@@ -37,7 +38,8 @@ export default new Router({
       name: 'Hello',
       components: {
         default: Hello,
-        footer: Footer
+        footer: Footer,
+        header: Header
       }
     },
     {
@@ -45,7 +47,8 @@ export default new Router({
       name: 'Information',
       components: {
         default: Information,
-        footer: Footer
+        footer: Footer,
+        header: Header
       }
     },
     {
@@ -53,7 +56,8 @@ export default new Router({
       name: 'Rules',
       components: {
         default: Rules,
-        footer: Footer
+        footer: Footer,
+        header: Header
       }
     },
     {
@@ -61,7 +65,8 @@ export default new Router({
       name: 'Members',
       components: {
         default: ClubMembers,
-        footer: Footer
+        footer: Footer,
+        header: Header
       }
     },
     {
@@ -69,8 +74,8 @@ export default new Router({
       name: 'Schedule',
       components: {
         default: Schedule,
-        footer: Footer
-
+        footer: Footer,
+        header: Header
       }
     },
     {
@@ -78,7 +83,8 @@ export default new Router({
       name: 'Introduction',
       components: {
         default: Intro,
-        footer: Footer
+        footer: Footer,
+        header: Header
       }
     }
   ]

@@ -17,6 +17,9 @@ index.jsのルーティングの際に、ここでname要素が指定したコ�
 
 <template>
   <div id="app">
+    <div id="header">
+      <router-view name="header"></router-view>
+    </div>
     <div id="main_contents">
       <router-view></router-view>
     </div>
@@ -39,7 +42,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 *{
