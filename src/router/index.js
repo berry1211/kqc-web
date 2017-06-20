@@ -1,7 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/common/Hello'
-import Information from '@/components/Information'
+import Information from '@/components/members/Information'
+import Rules from '@/components/members/Rules'
+import ClubMembers from '@/components/members/ClubMember'
+
+// 共通要素
+import Footer from '@/components/common/Footer'
 
 Vue.use(Router)
 
@@ -10,12 +15,34 @@ export default new Router({
     {
       path: '/',
       name: 'Hello',
-      component: Hello
+      components: {
+          default: Hello,
+          footer: Footer
+      }
     },
     {
-      path: '/information',
+      path: '/members/information',
       name: 'Information',
-      component: Information
+      components: {
+          default: Information,
+          footer: Footer
+      }
+    },
+    {
+      path: '/members/rules',
+      name: 'Rules',
+      components: {
+          default: Rules,
+          footer: Footer
+      }
+    },
+    {
+      path: '/members',
+      name: 'Members',
+      components: {
+          default: ClubMembers,
+          footer: Footer
+      }
     }
   ]
 })

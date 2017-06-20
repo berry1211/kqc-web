@@ -13,6 +13,9 @@ export default {
       msg: 'Welcome to KQC',
       msg_sub: 'Information'
     }
+  },
+  created: function(){
+      document.title = 'インフォメーション | 会員用'
   }
 }
 </script>

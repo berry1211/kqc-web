@@ -1,8 +1,8 @@
 <template>
-  <div id="hello">
+  <div id="information">
     <h1>{{ msg }}</h1>
     <h2>{{ msg_sub }}</h2>
-    <router-link to="/members">会員専用</router-link>
+    <router-link to='/members/information'>インフォメーション</router-link>
   </div>
 </template>
 
@@ -12,11 +12,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to KQC',
-      msg_sub: 'This is a WebSite for KQC'
+      msg_sub: 'Club Mmebers Only'
     }
   },
   created: function(){
-      document.title = 'KQC'
+      document.title = '会員用'
   }
 }
 </script>
@@ -25,10 +25,6 @@ export default {
 <style scoped>
 h1, h2 {
   font-weight: normal;
-}
-
-#hello{
-    height: 800px;
 }
 
 ul {

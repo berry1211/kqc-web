@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-    <router-link to="/information">インフォメーション</router-link>
+      <div id="main_contents">
+          <router-view></router-view>
+      </div>
+    <div class="footer">
+        <router-view name="footer"></router-view>
+    </div>
   </div>
 </template>
 
@@ -19,5 +23,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
 </style>
