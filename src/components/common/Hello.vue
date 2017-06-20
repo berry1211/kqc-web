@@ -1,10 +1,9 @@
 <template>
   <div id="hello">
-    <h1>{{ msg }}</h1>
-    <h2>{{ msg_sub }}</h2>
-    <router-link to="/intro">紹介</router-link>
-    <router-link to="/schedule">予定</router-link>
-    <router-link to="/members">会員専用</router-link>
+    <div class="main-contents-wrapper">
+      <h1>{{ msg }}</h1>
+      <h2>{{ msg_sub }}</h2>
+    </div>
   </div>
 </template>
 
@@ -33,16 +32,8 @@ h1, h2 {
   height: 800px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.main-contents-wrapper{
 }
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
 a {
   color: #424242;
 }
