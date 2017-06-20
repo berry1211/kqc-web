@@ -23,7 +23,7 @@ h1, h2 {
 }
 
 #header{
-  height: 120px;
+  height: 60px;
   width: 100%;
   background: #424242;
 }

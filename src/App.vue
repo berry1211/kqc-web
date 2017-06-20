@@ -20,6 +20,9 @@ index.jsのルーティングの際に、ここでname要素が指定したコ�
     <div id="header">
       <router-view name="header"></router-view>
     </div>
+    <div id="global-bar">
+      <router-view name="bar"></router-view>
+    </div>
     <div id="main_contents">
       <router-view></router-view>
     </div>
@@ -42,6 +45,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+#main_contents{
+  margin-top: 32px;
 }
 
 *{

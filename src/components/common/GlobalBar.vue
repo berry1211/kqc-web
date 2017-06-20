@@ -1,16 +1,14 @@
 <template>
-  <div id="footer">
-    <div class="copy-right-wrapper">
-      <p class="copy-right">
-        Copyright (c) 2017 Ha10 ( Yasunori Horii ). All Rights Reserved
-      </p>
+  <div id="global-bar">
+    <div class="global-bar-wrapper">
+
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'footer',
+  name: 'global-bar',
   data () {
     return {
     }
@@ -24,18 +22,10 @@ h1, h2 {
   font-weight: normal;
 }
 
-#footer{
-  height: 120px;
+#global-bar{
+  height: 48px;
   width: 100%;
-  background: #424242;
-}
-
-.copy-right-wrapper{
-}
-.copy-right{
-  padding-top: 36px;
-  color: #ffffff;
-  font-size: 16px;
+  background: #535353;
 }
 
 a {
