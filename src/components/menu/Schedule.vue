@@ -15,7 +15,7 @@ export default {
     }
   },
   created: function(){
-      document.title = '予定 | KQC'
+    document.title = '予定 | KQC'
   }
 }
 </script>
@@ -27,7 +27,7 @@ h1, h2 {
 }
 
 #hello{
-    height: 800px;
+  height: 800px;
 }
 
 a {
@@ -35,7 +35,7 @@ a {
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 </style>

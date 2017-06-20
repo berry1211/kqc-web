@@ -16,7 +16,7 @@ export default {
     }
   },
   created: function(){
-      document.title = '会員用 | KQC'
+    document.title = '会員用 | KQC'
   }
 }
 </script>
@@ -28,7 +28,7 @@ h1, h2 {
 }
 
 #club-members{
-    height: 800px;
+  height: 800px;
 }
 
 a {

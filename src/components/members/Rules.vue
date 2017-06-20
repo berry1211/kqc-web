@@ -15,7 +15,7 @@ export default {
     }
   },
   created: function(){
-      document.title = 'インフォメーション | 会員用'
+    document.title = 'インフォメーション | 会員用'
   }
 }
 </script>

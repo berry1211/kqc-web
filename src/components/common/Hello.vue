@@ -18,7 +18,7 @@ export default {
     }
   },
   created: function(){
-      document.title = 'KQC'
+    document.title = 'KQC'
   }
 }
 </script>
@@ -30,7 +30,7 @@ h1, h2 {
 }
 
 #hello{
-    height: 800px;
+  height: 800px;
 }
 
 ul {

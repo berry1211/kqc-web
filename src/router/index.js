@@ -28,6 +28,7 @@ Vue.use(Router)
 *   component-name : App.vueなどの親要素において、router-viewタグのnameで指定された名前
 *   imported-name  : このindex.jsなどでimportされた際に決めた名前
 *
+*   ===============================
 */
 export default new Router({
   routes: [
@@ -35,40 +36,40 @@ export default new Router({
       path: '/',
       name: 'Hello',
       components: {
-          default: Hello,
-          footer: Footer
+        default: Hello,
+        footer: Footer
       }
     },
     {
       path: '/members/information',
       name: 'Information',
       components: {
-          default: Information,
-          footer: Footer
+        default: Information,
+        footer: Footer
       }
     },
     {
       path: '/members/rules',
       name: 'Rules',
       components: {
-          default: Rules,
-          footer: Footer
+        default: Rules,
+        footer: Footer
       }
     },
     {
       path: '/members',
       name: 'Members',
       components: {
-          default: ClubMembers,
-          footer: Footer
+        default: ClubMembers,
+        footer: Footer
       }
     },
     {
       path: '/schedule',
       name: 'Schedule',
       components: {
-          default: Schedule,
-          footer: Footer
+        default: Schedule,
+        footer: Footer
 
       }
     },
@@ -76,8 +77,8 @@ export default new Router({
       path: '/intro',
       name: 'Introduction',
       components: {
-          default: Intro,
-          footer: Footer
+        default: Intro,
+        footer: Footer
       }
     }
   ]
