@@ -7,15 +7,15 @@
 
 <script>
 export default {
-  name: 'links',
+  name: 'contest-result',
   data () {
     return {
       msg: 'Welcome to KQC',
-      msg_sub: 'Links'
+      msg_sub: 'Contest Result'
     }
   },
   created: function(){
-    document.title = 'リンク | KQC'
+    document.title = '試合結果 | KQC'
   }
 }
 </script>
