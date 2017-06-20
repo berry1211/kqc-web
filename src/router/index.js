@@ -13,6 +13,7 @@ import GlobalBar from '@/components/common/GlobalBar'
 import Schedule from '@/components/menu/Schedule'
 import Intro from '@/components/menu/Introduction'
 import ClubMembers from '@/components/members/ClubMember'
+import Links from '@/components/menu/Links'
 
 Vue.use(Router)
 
@@ -89,6 +90,16 @@ export default new Router({
       name: 'Introduction',
       components: {
         default: Intro,
+        footer: Footer,
+        header: Header,
+        bar: GlobalBar
+      }
+    },
+    {
+      path: '/links',
+      name: 'Links',
+      components: {
+        default: Links,
         footer: Footer,
         header: Header,
         bar: GlobalBar

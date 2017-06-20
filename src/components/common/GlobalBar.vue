@@ -6,7 +6,7 @@
       <router-link to="/members" class="bar-content"><p>試合結果</p></router-link>
       <router-link to="/members" class="bar-content"><p>会員専用</p></router-link>
       <router-link to="/members" class="bar-content"><p>会員専用</p></router-link>
-      <router-link to="/members" class="bar-content"><p>会員専用</p></router-link>
+      <router-link to="/members" class="bar-content"><p>リンク</p></router-link>
     </div>
   </div>
 </template>

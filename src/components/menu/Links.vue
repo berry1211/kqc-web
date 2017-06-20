@@ -1,20 +1,21 @@
 <template>
-  <div id="intro">
-
+  <div id="links">
+    <h1>{{ msg }}</h1>
+    <h2>{{ msg_sub }}</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'introduction',
+  name: 'links',
   data () {
     return {
       msg: 'Welcome to KQC',
-      msg_sub: 'Introduction'
+      msg_sub: 'Schedule'
     }
   },
   created: function(){
-    document.title = '紹介 | KQC'
+    document.title = 'リンク | KQC'
   }
 }
 </script>
@@ -25,7 +26,7 @@ h1, h2 {
   font-weight: normal;
 }
 
-#intro{
+#links{
   height: 800px;
 }
 
