@@ -7,7 +7,7 @@ This is a web site for KQC, Keio Qudo(Japanese Archery) Club.
 
 # License
 This web site is created by Ha10(Yasunori Horii).  
-Copyrigh (c) 2017 Ha10. All Rights Reserved.
+Copyright (c) 2017 Ha10. All Rights Reserved.
 <!-- ## Build Setup
 
 ``` bash

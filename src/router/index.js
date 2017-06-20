@@ -10,6 +10,7 @@ import Footer from '@/components/common/Footer'
 
 // グローバルメニュー(常に表示されているメニュー)要素
 import Schedule from '@/components/menu/Schedule'
+import Intro from '@/components/menu/Introduction'
 
 Vue.use(Router)
 
@@ -54,6 +55,14 @@ export default new Router({
           default: Schedule,
           footer: Footer
 
+      }
+    },
+    {
+      path: '/intro',
+      name: 'Introduction',
+      components: {
+          default: Intro,
+          footer: Footer
       }
     }
   ]

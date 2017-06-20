@@ -1,24 +1,21 @@
 <template>
-  <div id="hello">
+  <div id="intro">
     <h1>{{ msg }}</h1>
     <h2>{{ msg_sub }}</h2>
-    <router-link to="/intro">紹介</router-link>
-    <router-link to="/schedule">予定</router-link>
-    <router-link to="/members">会員専用</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'introduction',
   data () {
     return {
       msg: 'Welcome to KQC',
-      msg_sub: 'This is a WebSite for KQC'
+      msg_sub: 'Introduction'
     }
   },
   created: function(){
-      document.title = 'KQC'
+      document.title = '紹介 | KQC'
   }
 }
 </script>
@@ -33,17 +30,12 @@ h1, h2 {
     height: 800px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
 a {
   color: #424242;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
 }
 </style>

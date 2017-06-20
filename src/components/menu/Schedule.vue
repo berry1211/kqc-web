@@ -11,7 +11,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to KQC',
-      msg_sub: 'This is a WebSite for KQC'
+      msg_sub: 'Schedule'
     }
   },
   created: function(){
@@ -30,17 +30,12 @@ h1, h2 {
     height: 800px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
 a {
-  color: #42b983;
+  color: #424242;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
 }
 </style>

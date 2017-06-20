@@ -16,7 +16,7 @@ export default {
     }
   },
   created: function(){
-      document.title = '会員用'
+      document.title = '会員用 | KQC'
   }
 }
 </script>
@@ -32,6 +32,6 @@ h1, h2 {
 }
 
 a {
-  color: #42b983;
+  color: #424242;
 }
 </style>
