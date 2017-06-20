@@ -1,8 +1,14 @@
-# kqc-web-vue
+# KQC Web Site
 
 > This is a web site for kqc
 
-## Build Setup
+# Description
+This is a web site for KQC, Keio Qudo(Japanese Archery) Club.
+
+# License
+This web site is created by Ha10(Yasunori Horii).
+Copyrigh (c) 2017 Ha10. All Rights Reserved.
+<!-- ## Build Setup
 
 ``` bash
 # install dependencies
@@ -27,4 +33,4 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader). -->
