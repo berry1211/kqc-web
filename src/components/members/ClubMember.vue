@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
     <h2>{{ msg_sub }}</h2>
     <router-link to='/members/information'>インフォメーション</router-link>
+    <router-link to='/members/rules'>規約</router-link>
   </div>
 </template>
 
@@ -33,5 +34,6 @@ h1, h2 {
 
 a {
   color: #424242;
+  text-decoration: none;
 }
 </style>
