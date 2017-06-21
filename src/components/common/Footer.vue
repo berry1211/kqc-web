@@ -31,11 +31,15 @@ h1, h2 {
 }
 
 .copy-right-wrapper{
+  width: 440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .copy-right{
   padding-top: 36px;
   color: #ffffff;
   font-size: 16px;
+  display: inline-block;
 }
 
 a {
