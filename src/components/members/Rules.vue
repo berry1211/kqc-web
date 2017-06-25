@@ -15,7 +15,7 @@ export default {
     }
   },
   created: function(){
-    document.title = '規約 | 会員用'
+    document.title = '規約 | KQC会員用'
   }
 }
 </script>
