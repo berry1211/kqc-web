@@ -2,8 +2,8 @@
   <div id="club-members">
     <h1>{{ msg }}</h1>
     <h2>{{ msg_sub }}</h2>
-    <router-link to='/members/information'>インフォメーション</router-link>
-    <router-link to='/members/rules'>規約</router-link>
+    <router-link to='/members/information' class="member-link">インフォメーション</router-link>
+    <router-link to='/members/rules' class="member-link">規約</router-link>
   </div>
 </template>
 
@@ -32,8 +32,10 @@ h1, h2 {
   height: 800px;
 }
 
+.member-link :hover{
+}
 a {
   color: #424242;
-  text-decoration: none;
 }
+
 </style>
