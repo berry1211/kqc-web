@@ -1,23 +1,21 @@
 <template>
-  <div id="hello">
-    <div class="main-contents-wrapper">
-      <h1>{{ msg }}</h1>
-      <h2>{{ msg_sub }}</h2>
-    </div>
+  <div id="links">
+    <h1>{{ msg }}</h1>
+    <h2>{{ msg_sub }}</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'links',
   data () {
     return {
       msg: 'Welcome to KQC',
-      msg_sub: 'This is a WebSite for KQC'
+      msg_sub: 'Links'
     }
   },
   created: function(){
-    document.title = 'KQC'
+    document.title = 'リンク | KQC'
   }
 }
 </script>
@@ -28,13 +26,16 @@ h1, h2 {
   font-weight: normal;
 }
 
-#hello{
+#links{
   height: 800px;
 }
 
-.main-contents-wrapper{
-}
 a {
   color: #424242;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
 }
 </style>

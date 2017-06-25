@@ -1,7 +1,6 @@
 <template>
   <div id="intro">
-    <h1>{{ msg }}</h1>
-    <h2>{{ msg_sub }}</h2>
+
   </div>
 </template>
 
@@ -26,7 +25,7 @@ h1, h2 {
   font-weight: normal;
 }
 
-#hello{
+#intro{
   height: 800px;
 }
 
