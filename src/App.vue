@@ -39,18 +39,31 @@ export default {
 </script>
 
 <style>
+@media screen and (max-width: 480px) {
+  #main_contents{
+    margin-top: 32px;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  #main_contents{
+    margin-top: 32px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-}
-
-#main_contents{
-  margin-top: 32px;
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 *{
