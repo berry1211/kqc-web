@@ -35,7 +35,6 @@ h1, h2 {
     background: #535353;
   }
   .global-bar-wrapper{
-    display: block;
     width: 100%;
     height: 96px;
     margin-left: auto;
@@ -49,8 +48,7 @@ h1, h2 {
     margin-right: auto;
   }
   .bar-content{
-    height: inherit;
-    width: 120px;
+    width: 33.333%;
     line-height: 48px;
     text-decoration: none;
     float: left;
