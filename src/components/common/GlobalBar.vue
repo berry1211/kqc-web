@@ -28,6 +28,47 @@ h1, h2 {
   font-weight: normal;
 }
 
+@media screen and (max-width: 480px) {
+  #global-bar{
+    height: 96px;
+    width: 100%;
+    background: #535353;
+  }
+  .global-bar-wrapper{
+    display: block;
+    width: 100%;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .global-bar-container{
+    width: 100%;
+    height: inherit;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bar-content{
+    height: inherit;
+    width: 120px;
+    line-height: 48px;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    text-align: center;
+  }
+  .bar-content :hover{
+    background: #444444;
+  }
+  .bar-content p{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: bold;
+  }
+}
+
 #global-bar{
   height: 48px;
   width: 100%;
