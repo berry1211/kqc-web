@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/common/Hello'
+
+// 会員要
 import Information from '@/components/members/Information'
 import Rules from '@/components/members/Rules'
+import KqcTimes from '@/components/members/KqcTimes'
 
 // 共通要素
 import Footer from '@/components/common/Footer'
@@ -61,6 +64,16 @@ export default new Router({
       name: 'Rules',
       components: {
         default: Rules,
+        footer: Footer,
+        header: Header,
+        bar: GlobalBar
+      }
+    },
+    {
+      path: '/members/kqc-times',
+      name: 'KQCTimes',
+      components: {
+        default: KqcTimes,
         footer: Footer,
         header: Header,
         bar: GlobalBar
