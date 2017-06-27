@@ -16,6 +16,16 @@ export default {
   },
   created: function(){
     document.title = '規約 | 会員用'
+  },
+
+  created: function () {
+    axios.get('http://127.0.0.1:8000/info')
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
   }
 }
 </script>
