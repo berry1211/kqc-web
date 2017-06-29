@@ -1,7 +1,9 @@
 <template>
   <div id="header">
     <div class="header-content-wrapper">
-
+      <div class="login-button-wrapper">
+        <router-link to="/members" class="header-login">ログイン</router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -22,6 +24,53 @@ h1, h2 {
   font-weight: normal;
 }
 
+@media screen and (max-width: 480px) {
+  .header-login{
+    width: 100px;
+    margin-right: 0px;
+    margin-left: auto;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .header-content-wrapper{
+    height: inherit;
+  }
+  .login-button-wrapper{
+    width: 80px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: 0px;
+    line-height: 60px;
+  }
+  #header{
+    height: 60px;
+    width: 100%;
+    background: #424242;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header-login{
+    width: 120px;
+    margin-right: 0px;
+    margin-left: auto;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .login-button-wrapper{
+    width: 100px;
+    margin-left: auto;
+    margin-right: 20px;
+    line-height: 60px;
+  }
+  #header{
+    height: 60px;
+    width: 100%;
+    background: #424242;
+  }
+}
 #header{
   height: 60px;
   width: 100%;

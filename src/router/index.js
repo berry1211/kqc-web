@@ -6,6 +6,8 @@ import Hello from '@/components/common/Hello'
 import Information from '@/components/members/Information'
 import Rules from '@/components/members/Rules'
 import KqcTimes from '@/components/members/KqcTimes'
+import HuntingJobList from '@/components/members/HuntingJobList'
+import HuntingJobDetail from '@/components/members/HuntingJobDetail'
 
 // 共通要素
 import Footer from '@/components/common/Footer'
@@ -74,6 +76,26 @@ export default new Router({
       name: 'KQCTimes',
       components: {
         default: KqcTimes,
+        footer: Footer,
+        header: Header,
+        bar: GlobalBar
+      }
+    },
+    {
+      path: '/members/hunting-job-list',
+      name: 'HuntingJobList',
+      components: {
+        default: HuntingJobList,
+        footer: Footer,
+        header: Header,
+        bar: GlobalBar
+      }
+    },
+    {
+      path: '/members/hunting-job-detail',
+      name: 'HuntingJobDetail',
+      components: {
+        default: HuntingJobDetail,
         footer: Footer,
         header: Header,
         bar: GlobalBar

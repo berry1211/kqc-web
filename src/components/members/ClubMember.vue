@@ -5,6 +5,7 @@
     <router-link to='/members/information' class="member-link">インフォメーション</router-link>
     <router-link to='/members/rules' class="member-link">規約</router-link>
     <router-link to='/members/kqc-times' class="member-link">KQCTimes</router-link>
+    <router-link to='/members/hunting-job-list' class="member-link">就活情報</router-link>
   </div>
 </template>
 

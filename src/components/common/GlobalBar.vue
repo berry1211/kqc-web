@@ -5,7 +5,6 @@
         <router-link to="/intro" class="bar-content"><p>紹介</p></router-link>
         <router-link to="/schedule" class="bar-content"><p>予定</p></router-link>
         <router-link to="/contest-result" class="bar-content"><p>試合結果</p></router-link>
-        <router-link to="/members" class="bar-content"><p>会員専用</p></router-link>
         <router-link to="/links" class="bar-content"><p>リンク</p></router-link>
       </div>
     </div>
@@ -48,7 +47,8 @@ h1, h2 {
     margin-right: auto;
   }
   .bar-content{
-    width: 33.333%;
+    width: 25%;
+    font-size: 12px;
     line-height: 48px;
     text-decoration: none;
     float: left;
@@ -74,7 +74,7 @@ h1, h2 {
   }
   .global-bar-wrapper{
     display: block;
-    width: 480px;
+    width: 400px;
     height: inherit;
     margin-left: auto;
     margin-right: auto;

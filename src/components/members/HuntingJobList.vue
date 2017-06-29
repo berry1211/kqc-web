@@ -1,7 +1,8 @@
 <template>
-  <div id="hunting-job">
+  <div id="hunting-job-list">
     <h1>{{ msg }}</h1>
     <h2>{{ msg_sub }}</h2>
+    <router-link to="/members/hunting-job-detail">詳細</router-link>
   </div>
 </template>
 
@@ -11,11 +12,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to KQC',
-      msg_sub: 'KQC Times'
+      msg_sub: 'Hunting Job List'
     }
   },
   created: function(){
-    document.title = 'KQCTimes | KQC会員用'
+    document.title = '就活情報 | KQC会員用'
   }
 }
 </script>
@@ -27,11 +28,11 @@ h1, h2 {
 }
 
 @media screen and (max-width: 480px) {
-  #hunting-job{
+  #hunting-job-list{
     height: 800px;
   }
 }
-#hunting-job{
+#hunting-job-list{
   height: 800px;
 }
 a {
