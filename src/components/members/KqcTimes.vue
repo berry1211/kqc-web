@@ -10,6 +10,7 @@
 
       <div class="content-wrapper">
         <div class="main-content-wrapper">
+          <h2>2017年 KQCTimes</h2>
           <div class="times-model-wrapper">
             <div class="times-title-wrapper">
               <h3>KQCTimes 6月号</h3>
@@ -149,6 +150,11 @@ export default {
     text-align: center;
     display: block;
   }
+  h2 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-left: 12px;
+  }
   #kqctimes-container{
     height: 100%;
   }
@@ -177,7 +183,7 @@ export default {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 32px;
+    margin-top: 48px;
     margin-bottom: 32px;
   }
   .main-content-wrapper{
