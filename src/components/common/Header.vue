@@ -1,6 +1,9 @@
 <template>
   <div id="header">
     <div class="header-content-wrapper">
+      <div class="logo-wrapper">
+        <img src="../../assets/kqc.png" height="36px"/>
+      </div>
       <div class="login-button-wrapper">
         <router-link to="/members" class="header-login">ログイン</router-link>
       </div>
@@ -34,7 +37,6 @@ h1, h2 {
     font-weight: bold;
   }
   .header-content-wrapper{
-    height: inherit;
   }
   .login-button-wrapper{
     width: 80px;
@@ -51,6 +53,16 @@ h1, h2 {
 }
 
 @media screen and (min-width: 480px) {
+  .header-content-wrapper{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo-wrapper{
+    line-height: 36px;
+    padding: 12px;
+    float: left;
+  }
   .header-login{
     width: 120px;
     margin-right: 0px;
@@ -62,7 +74,6 @@ h1, h2 {
   .login-button-wrapper{
     width: 100px;
     margin-left: auto;
-    margin-right: 20px;
     line-height: 60px;
   }
   #header{
