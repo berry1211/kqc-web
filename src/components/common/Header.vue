@@ -2,8 +2,18 @@
   <div id="header">
     <div class="header-content-wrapper">
       <div class="logo-wrapper">
-        <img src="../../assets/kqc.png" height="36px"/>
+        <img src="../../assets/kqc.png" height="30px"/>
       </div>
+
+      <div class="global-bar-wrapper">
+        <div class="global-bar-container">
+          <router-link to="/intro" class="bar-content"><p>紹介</p></router-link>
+          <router-link to="/schedule" class="bar-content"><p>予定</p></router-link>
+          <router-link to="/contest-result" class="bar-content"><p>試合結果</p></router-link>
+          <router-link to="/links" class="bar-content"><p>リンク</p></router-link>
+        </div>
+      </div>
+
       <div class="login-button-wrapper">
         <router-link to="/members" class="header-login">ログイン</router-link>
       </div>
@@ -58,10 +68,36 @@ h1, h2 {
     margin-left: auto;
     margin-right: auto;
   }
+  .global-bar-wrapper{
+    display: block;
+    width: 400px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bar-content{
+    height: inherit;
+    line-height: 60px;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    text-align: center;
+  }
+  .bar-content :hover{
+    background: #212121;
+  }
+
   .logo-wrapper{
     line-height: 36px;
-    padding: 12px;
+    padding-top: 15px;
     float: left;
+  }
+  .bar-content p{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: bold;
   }
   .header-login{
     width: 120px;
@@ -89,7 +125,7 @@ h1, h2 {
 }
 
 a {
-  color: #42b983;
+  color: #e0e0e0;
 }
 
 *{
