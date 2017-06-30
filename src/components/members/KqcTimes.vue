@@ -102,6 +102,7 @@ export default {
   h1 {
     position: absolute;
     top: 32px;
+    left: 396px;
     font-weight: normal;
     text-align: center;
     display: block;
@@ -139,27 +140,44 @@ export default {
   }
   h1 {
     position: absolute;
-    top: 64px;
+    font-size: 48px;
+    top: 40%;
+    left: 40%;
     font-weight: normal;
     color: #ffffff;
     font-weight: bold;
     text-align: center;
     display: block;
   }
+  #kqctimes-container{
+    height: 100%;
+  }
   .cover-image-wrapper{
+    width: 100%;
+    height: 292px;
   }
   .cover-image-container{
+    width: 100%;
+    height: 292px;
     position: relative;
+    vertical-align: middle;
+    overflow: hidden;
   }
   .cover-image{
+    display: block;
     position: absolute;
     width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
   }
 
   .content-wrapper{
     position: relative;
-    top: 300px;
     height: 100%;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
     margin-bottom: 32px;
   }
   .main-content-wrapper{

@@ -47,6 +47,9 @@ export default {
 
   #club-members{
     height: 800px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .member-link :hover{

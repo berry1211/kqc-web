@@ -50,7 +50,7 @@ export default {
 @media screen and (min-width:480px) {
 
   #main_contents{
-    width: 960px;
+    width: 100%;
     height: auto;
     margin-top: 0px;
     margin-bottom: 0px;

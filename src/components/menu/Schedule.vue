@@ -1,5 +1,5 @@
 <template>
-  <div id="hello">
+  <div id="schdule">
     <h1>{{ msg }}</h1>
     <h2>{{ msg_sub }}</h2>
   </div>
@@ -26,8 +26,11 @@ h1, h2 {
   font-weight: normal;
 }
 
-#hello{
+#schdule{
   height: 800px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
