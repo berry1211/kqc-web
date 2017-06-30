@@ -12,7 +12,6 @@ import HuntingJobDetail from '@/components/members/HuntingJobDetail'
 // 共通要素
 import Footer from '@/components/common/Footer'
 import Header from '@/components/common/Header'
-import GlobalBar from '@/components/common/GlobalBar'
 
 // グローバルメニュー(常に表示されているメニュー)要素
 import Schedule from '@/components/menu/Schedule'
@@ -47,8 +46,7 @@ export default new Router({
       components: {
         default: Hello,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     },
     {
@@ -57,8 +55,7 @@ export default new Router({
       components: {
         default: Information,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     },
     {
@@ -67,8 +64,7 @@ export default new Router({
       components: {
         default: Rules,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     },
     {
@@ -77,8 +73,7 @@ export default new Router({
       components: {
         default: KqcTimes,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     },
     {
@@ -87,8 +82,7 @@ export default new Router({
       components: {
         default: HuntingJobList,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     },
     {
@@ -97,8 +91,7 @@ export default new Router({
       components: {
         default: HuntingJobDetail,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     },
     {
@@ -107,8 +100,7 @@ export default new Router({
       components: {
         default: ClubMembers,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     },
     {
@@ -117,8 +109,7 @@ export default new Router({
       components: {
         default: Schedule,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     },
     {
@@ -127,8 +118,7 @@ export default new Router({
       components: {
         default: Intro,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     },
     {
@@ -137,8 +127,7 @@ export default new Router({
       components: {
         default: Links,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     },
     {
@@ -147,8 +136,7 @@ export default new Router({
       components: {
         default: ContestResult,
         footer: Footer,
-        header: Header,
-        bar: GlobalBar
+        header: Header
       }
     }
   ]
