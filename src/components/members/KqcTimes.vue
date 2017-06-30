@@ -1,68 +1,77 @@
 <template>
   <div id="kqctimes">
-    <h1>{{ msg_sub }}</h1>
-
-    <div class="content-wrapper">
-      <div class="main-content-wrapper">
-        <div class="times-model-wrapper">
-          <div class="times-title-wrapper">
-            <h3>KQCTimes 6月号</h3>
-            <p class="sub-title">〜総務特集〜</p>
-          </div>
-          <div class="content-summary-wrapper">
-            <p>
-              みなさまこんにちは。６月にはもう初心者の入会も終了し、指導も本格的になっている頃ですね。私は指導ができないので、特に用賀組の初心者とほとんど交流がないため、きっと名前を覚えてもらえていないと思います...
-    　夏合宿の頃には、web担が誰なのかということを知ってもらえるように頑張って話しかけていきたいです！(コミュ力不足)
-            </p>
-          </div>
+    <div id="kqctimes-container">
+      <div class="cover-image-wrapper">
+        <div class="cover-image-container">
+          <img src="../../assets/newspaper.png" class="cover-image"/>
+          <h1>{{ msg_sub }}</h1>
         </div>
-
-        <div class="times-model-wrapper">
-          <div class="times-title-wrapper">
-            <h3>KQCTimes 5月号</h3>
-            <p class="sub-title">〜日吉代表・臨時練習担当特集〜</p>
-          </div>
-          <div class="content-summary-wrapper">
-            <p>
-              みなさまこんにちは。新歓合宿、お疲れ様でした！
-    　個人的にはすごく楽しかったです。１年生はいい子達ばかりで、２女さん感激です。
-    　新入生が楽しんでくれていたらいいのですが、、、このままKQCの魅力を知って、入会してくれるといいですね！
-    　これからひとりひとりともっと話すのが楽しみです。
-    　初心者は、最初は練習がつまらないと感じるとは思いますが、しばらく頑張ってほしいですね。
-    　夏合宿で初めて的前に立つ感動は忘れられません！！
-    　それに、後から最初の基礎練習の大切さに気づきました。胴造りとか、私も一緒に教わりたいです。
-            </p>
-          </div>
-        </div>
-
-        <div class="times-model-wrapper">
-          <div class="times-title-wrapper">
-            <h3>KQCTimes 4月号</h3>
-            <p class="sub-title">〜財務・外務特集〜</p>
-          </div>
-          <div class="content-summary-wrapper">
-            <p>
-              みなさまこんにちは。いつの間にか新年度が始まって呆然としている吉田です。
-  　ついこの前自分が新歓されていたのに、もう後輩ができるんですね。早い...。
-  　なにはともあれ、32期の新歓頑張りましょう！みんな入ってくれるといいなぁ。
-  　それにビラ配りってすごく疲れるんですね、驚きましたよ。自分の運動不足を実感しました笑
-  　体育ちゃんと予約して、運動不足を解消しなきゃいけませんね。
-            </p>
-          </div>
-        </div>
-
       </div>
 
-      <div class="sub-content-wrapper">
-        <div class="title-wrapper">
-          <h3 class="sub-content-title">アーカイブ</h3>
+      <div class="content-wrapper">
+        <div class="main-content-wrapper">
+          <div class="times-model-wrapper">
+            <div class="times-title-wrapper">
+              <h3>KQCTimes 6月号</h3>
+              <p class="sub-title">〜総務特集〜</p>
+            </div>
+            <div class="content-summary-wrapper">
+              <p>
+                みなさまこんにちは。６月にはもう初心者の入会も終了し、指導も本格的になっている頃ですね。私は指導ができないので、特に用賀組の初心者とほとんど交流がないため、きっと名前を覚えてもらえていないと思います...
+      　夏合宿の頃には、web担が誰なのかということを知ってもらえるように頑張って話しかけていきたいです！(コミュ力不足)
+              </p>
+            </div>
+          </div>
+
+          <div class="times-model-wrapper">
+            <div class="times-title-wrapper">
+              <h3>KQCTimes 5月号</h3>
+              <p class="sub-title">〜日吉代表・臨時練習担当特集〜</p>
+            </div>
+            <div class="content-summary-wrapper">
+              <p>
+                みなさまこんにちは。新歓合宿、お疲れ様でした！
+      　個人的にはすごく楽しかったです。１年生はいい子達ばかりで、２女さん感激です。
+      　新入生が楽しんでくれていたらいいのですが、、、このままKQCの魅力を知って、入会してくれるといいですね！
+      　これからひとりひとりともっと話すのが楽しみです。
+      　初心者は、最初は練習がつまらないと感じるとは思いますが、しばらく頑張ってほしいですね。
+      　夏合宿で初めて的前に立つ感動は忘れられません！！
+      　それに、後から最初の基礎練習の大切さに気づきました。胴造りとか、私も一緒に教わりたいです。
+              </p>
+            </div>
+          </div>
+
+          <div class="times-model-wrapper">
+            <div class="times-title-wrapper">
+              <h3>KQCTimes 4月号</h3>
+              <p class="sub-title">〜財務・外務特集〜</p>
+            </div>
+            <div class="content-summary-wrapper">
+              <p>
+                みなさまこんにちは。いつの間にか新年度が始まって呆然としている吉田です。
+    　ついこの前自分が新歓されていたのに、もう後輩ができるんですね。早い...。
+    　なにはともあれ、32期の新歓頑張りましょう！みんな入ってくれるといいなぁ。
+    　それにビラ配りってすごく疲れるんですね、驚きましたよ。自分の運動不足を実感しました笑
+    　体育ちゃんと予約して、運動不足を解消しなきゃいけませんね。
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="sub-content-wrapper">
+          <div class="title-wrapper">
+            <h3 class="sub-content-title">アーカイブ</h3>
+          </div>
+        </div>
+
+        <div id="space">
+
         </div>
       </div>
     </div>
 
-    <div id="space">
 
-    </div>
 
   </div>
 </template>
@@ -84,19 +93,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  font-weight: normal;
-  text-align: center;
-  display: block;
-  margin-bottom: 84px;
-  margin-top: 84px;
-}
 
 @media screen and (max-width: 480px) {
   #kqctimes{
     height: 100%;
   }
 
+  h1 {
+    position: absolute;
+    top: 32px;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+  }
   .times-model-wrapper{
     width: 360px;
     margin-left: auto;
@@ -126,14 +135,35 @@ h1 {
 
 @media screen and (min-width: 480px) {
   #kqctimes{
-    height: 100%;
+    height: auto;
+  }
+  h1 {
+    position: absolute;
+    top: 64px;
+    font-weight: normal;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+  }
+  .cover-image-wrapper{
+  }
+  .cover-image-container{
+    position: relative;
+  }
+  .cover-image{
+    position: absolute;
+    width: 100%;
   }
 
   .content-wrapper{
+    position: relative;
+    top: 300px;
     height: 100%;
     margin-bottom: 32px;
   }
   .main-content-wrapper{
+    height: 100%;
     float: left;
   }
   .times-model-wrapper{
@@ -146,6 +176,7 @@ h1 {
   h3{
     font-size: 32px;
     float: left;
+    font-weight: normal;
   }
   .sub-title{
     font-size: 24px;
@@ -166,7 +197,7 @@ h1 {
     margin-left: 740px;
     margin-top: 32px;
     width: auto;
-    height: 900px;
+    height: 100px;
     background: #e0e0e0;
   }
 
@@ -188,5 +219,10 @@ h1 {
 
 a {
   color: #42b983;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
 }
 </style>
