@@ -28,6 +28,9 @@ h1, h2 {
 
 #links{
   height: 800px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {

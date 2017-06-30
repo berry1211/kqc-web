@@ -27,6 +27,9 @@ h1, h2 {
 
 #intro{
   height: 800px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {

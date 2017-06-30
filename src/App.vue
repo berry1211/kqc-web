@@ -41,18 +41,19 @@ export default {
 <style>
 @media screen and (max-width: 480px) {
   #main_contents{
-    margin-top: 32px;
     width: 375px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width:480px) {
 
   #main_contents{
-    margin-top: 32px;
-    width: 960px;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
   }
