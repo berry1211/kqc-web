@@ -3,7 +3,32 @@
 > This is a web site for kqc
 
 # Description
-This is a web site for KQC, Keio Qudo(Japanese Archery) Club.
+これはKQC(慶應弓道同好会)の公式HPです。2017年に開発され、アップデートが続いています。
+
+# For Developer
+HTMLやCSSはもちろん、Node.jsやVue.jsを理解しようとしているあなたは、このプロジェクトを触ってみるべきです。  
+このサイトは主にVue.jsの仕組みの上に成り立っており、Single Page Application(SPA)として構成されています。  
+
+もし、主なデザインを修正しようとする場合には、該当のコンポーネント内のHTML,CSSを編集してください。  
+コンポーネントは、src/componentsに実装されています。
+
+また、基本となるルーティングの実装は、src/router/index.jsに実装されています。  
+コンポーネントの取扱いについては、index.js内のコメントを参照してください。
+
+このプロジェクトでは、独自APIを使用することでデータベースとのやり取りをしています。  
+APIの仕様に関しては、https://github.com/HALU5071/kqc-api のREADMEを参照してください。
+
+
+# Dependencies of Packages
+このNode.jsプロジェクトでは、以下のPackagesを利用しています。
+
+- Vue
+- vue-router
+- axios
+
+# Change Log
+## Release 1.0.0
+KQCサイトのメイン機能をリリースしました。
 
 # License
 This web site is created by Ha10(Yasunori Horii).  
