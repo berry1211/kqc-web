@@ -54,7 +54,9 @@
       </div>
 
       <div class="sub-content-wrapper">
-
+        <div class="title-wrapper">
+          <h3 class="sub-content-title">アーカイブ</h3>
+        </div>
       </div>
     </div>
 
@@ -127,6 +129,10 @@ h1 {
     height: 100%;
   }
 
+  .content-wrapper{
+    height: 100%;
+    margin-bottom: 32px;
+  }
   .main-content-wrapper{
     float: left;
   }
@@ -158,9 +164,18 @@ h1 {
 
   .sub-content-wrapper{
     margin-left: 740px;
+    margin-top: 32px;
     width: auto;
-    height: 200px;
+    height: 900px;
     background: #e0e0e0;
+  }
+
+  .title-wrapper{
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+  .sub-content-title{
+    font-size: 16px;
   }
 
   /*スペースのコンポーネント*/
