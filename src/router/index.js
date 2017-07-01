@@ -2,10 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/common/Hello'
 
-// 会員要
+// 会員用
 import Information from '@/components/members/Information'
 import Rules from '@/components/members/Rules'
 import KqcTimesList from '@/components/members/KqcTimesList'
+import KqcTimesDetail from '@/components/members/KqcTimesDetail'
 import HuntingJobList from '@/components/members/HuntingJobList'
 import HuntingJobDetail from '@/components/members/HuntingJobDetail'
 
@@ -72,6 +73,15 @@ export default new Router({
       name: 'KQCTimes',
       components: {
         default: KqcTimesList,
+        footer: Footer,
+        header: Header
+      }
+    },
+    {
+      path: '/members/kqc-times/detail',
+      name: 'KQCTimesDetail',
+      components: {
+        default: KqcTimesDetail,
         footer: Footer,
         header: Header
       }
