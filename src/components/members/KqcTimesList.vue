@@ -14,7 +14,7 @@
           <h2>{{ this_year }}</h2>
           <div class="times-model-wrapper">
             <div class="times-title-wrapper">
-              <a><h3>KQC Times 6月号</h3></a>
+              <router-link to="/members/kqc-times/detail" class="kqctimes-list-item"><h3>KQC Times 6月号</h3></router-link>
               <p class="sub-title">〜総務特集〜</p>
               <p class="sub-status">New!!</p>
             </div>
@@ -256,6 +256,9 @@ export default {
     margin-right: auto;
     margin-top: 32px;
     margin-bottom: 64px;
+  }
+  .kqctimes-list-item{
+    color: inherit;
   }
   h3{
     font-size: 32px;
