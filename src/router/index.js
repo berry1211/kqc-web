@@ -5,7 +5,7 @@ import Hello from '@/components/common/Hello'
 // 会員要
 import Information from '@/components/members/Information'
 import Rules from '@/components/members/Rules'
-import KqcTimes from '@/components/members/KqcTimes'
+import KqcTimesList from '@/components/members/KqcTimesList'
 import HuntingJobList from '@/components/members/HuntingJobList'
 import HuntingJobDetail from '@/components/members/HuntingJobDetail'
 
@@ -71,7 +71,7 @@ export default new Router({
       path: '/members/kqc-times',
       name: 'KQCTimes',
       components: {
-        default: KqcTimes,
+        default: KqcTimesList,
         footer: Footer,
         header: Header
       }
