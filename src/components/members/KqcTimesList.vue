@@ -283,7 +283,9 @@ export default {
     margin-top: 12px;
     clear: left;
   }
-
+  .content-summary-wrapper p{
+    font-size: 16px;
+  }
 
   .sub-content-wrapper{
     margin-left: 740px;
