@@ -12,6 +12,19 @@
       <div class="content-wrapper">
         <div class="main-content-wrapper">
           <h2>{{ this_year }}</h2>
+
+          <div class="times-model-wrapper">
+            <div class="times-title-wrapper">
+              <router-link to="/members/kqc-times/detail" class="kqctimes-list-item"><h3>{{ }}</h3></router-link>
+              <p class="sub-title">〜総務特集〜</p>
+              <p class="sub-status">New!!</p>
+            </div>
+            <div class="content-summary-wrapper">
+              <p>{{  }}</p>
+            </div>
+          </div>
+
+          <!--
           <div class="times-model-wrapper">
             <div class="times-title-wrapper">
               <router-link to="/members/kqc-times/detail" class="kqctimes-list-item"><h3>KQC Times 6月号</h3></router-link>
@@ -105,6 +118,8 @@
             </div>
           </div>
 
+        -->
+
         </div>
 
         <div class="sub-content-wrapper">
@@ -125,6 +140,14 @@
 </template>
 
 <script>
+import Vue from 'vue';
+import store from '../../store'
+
+var instance = new Vue({
+  data: {
+    kqctimeslist: []
+  }
+})
 export default {
   name: 'kqctimes',
   data () {
@@ -132,12 +155,19 @@ export default {
       msg: 'Welcome to KQC',
       msg_sub: 'KQC Times',
       msg_sub1: '練習・合宿・コンパなどの情報をお伝えします',
-      this_year: '2017年'
+      this_year: '2017年',
+      kqctimeslist: []
     }
   },
   created: function(){
     document.title = 'KQCTimes | KQC会員用'
-  }
+  },
+  // mounted: function (){
+  //   store.get_ajax('', 'kqctimeslist');
+  //   store.$on('GET_AJAX_COMPLETE', () => {
+  //     this.kqctimeslist = store.get_data('kqctimes_list')
+  //   })
+  // }
 }
 </script>
 
