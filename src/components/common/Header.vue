@@ -2,7 +2,7 @@
   <div id="header">
     <div class="header-content-wrapper">
       <div class="logo-wrapper">
-        <img src="../../assets/kqc.png" height="30px"/>
+        <router-link to="/"><img src="../../assets/kqc.png" height="30px"/></router-link>
       </div>
 
       <div class="global-bar-wrapper">

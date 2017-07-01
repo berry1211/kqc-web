@@ -231,11 +231,23 @@ export default {
       msg: 'Welcome to KQC',
       msg_sub: 'KQC Times',
       msg_sub1: '練習・合宿・コンパなどの情報をお伝えします',
-      this_year: '2017年'
+      this_year: '2017年',
+      kqctimes_list: []
     }
   },
   created: function(){
     document.title = 'KQCTimes | KQC会員用'
+  },
+  created: function (){
+    var jsonObject;
+    axios.get('https://api-kqc.herokuapp.com/info')
+      .then(function (response){
+        console.log(jsonObject);
+        console.log(response.data);
+      })
+      .catch(function (error){
+        console.log(error);
+      });
   }
 }
 </script>
