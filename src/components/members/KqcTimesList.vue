@@ -16,12 +16,11 @@
           <ul>
             <li v-for="kqctimes of kqctimeslist">
               <div class="times-model-wrapper">
-                <h3>
-                  {{ kqctimes.title }}
-                </h3>
-                <p>
-                  {{ kqctimes.content }}
-                </p>
+                <h3>{{ kqctimes.title }}</h3>
+                <p class="sub-title">〜{{ kqctimes.sub_title }}〜</p>
+                <div class="content-summary-wrapper">
+                  <p>{{ kqctimes.content }}</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -67,6 +66,7 @@ export default {
     axios.get('https://api-kqc.herokuapp.com/kqc-times')
       .then(response => {
         this.kqctimeslist = response.data
+        console.log(response.data);
       })
       .catch(e => {
         this.errors.push(e)
@@ -199,6 +199,7 @@ export default {
   }
   h3{
     font-size: 32px;
+    float: left;
     font-weight: normal;
   }
   .sub-title{
@@ -215,13 +216,6 @@ export default {
     margin-left: 32px;
     line-height: 48px;
     float: left;
-  }
-  .sub-status{
-    font-size: 20px;
-    display: inline-block;
-    color: #E91E63;
-    margin-left: 32px;
-    line-height: 48px;
   }
   .content-summary-wrapper{
     width: 90%;
