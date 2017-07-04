@@ -154,7 +154,7 @@ export default {
       msg: 'Welcome to KQC',
       msg_sub: 'KQC Times',
       msg_sub1: '練習・合宿・コンパなどの情報をお伝えします',
-      this_year: '2017年'
+      this_year: '2017年',
       kqctimeslist: []
     }
   },
