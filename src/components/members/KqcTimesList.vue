@@ -154,19 +154,25 @@ export default {
       msg: 'Welcome to KQC',
       msg_sub: 'KQC Times',
       msg_sub1: '練習・合宿・コンパなどの情報をお伝えします',
-      this_year: '2017年'
+      this_year: '2017年',
       kqctimeslist: []
     }
   },
   created: function(){
     document.title = 'KQCTimes | KQC会員用'
   },
-  // mounted: function (){
-  //   store.get_ajax('', 'kqctimeslist');
-  //   store.$on('GET_AJAX_COMPLETE', () => {
-  //     this.kqctimeslist = store.get_data('kqctimes_list')
-  //   })
-  // }
+
+  created: function (){
+    axios.get('https://api-kqc.herokuapp.com/kqc-times')
+      .then(function (response) {
+        instance.$data.kqctimeslist = response.data;
+        console.log('kqctimeslist: ',instance.$data.kqctimeslist);
+        console.log(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
 }
 </script>
 
