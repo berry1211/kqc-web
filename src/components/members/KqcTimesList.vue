@@ -24,8 +24,8 @@
             </div>
           </div>
 
-          <!--
-          <div class="times-model-wrapper">
+
+          <!-- <div class="times-model-wrapper">
             <div class="times-title-wrapper">
               <router-link to="/members/kqc-times/detail" class="kqctimes-list-item"><h3>KQC Times 6月号</h3></router-link>
               <p class="sub-title">〜総務特集〜</p>
@@ -116,8 +116,8 @@
                 この調子だと2020年の東京オリンピックもすぐですね（笑）
               </p>
             </div>
-          </div>
-        -->
+          </div> -->
+
 
         </div>
 
