@@ -9,6 +9,7 @@ import KqcTimesList from '@/components/members/KqcTimesList'
 import KqcTimesDetail from '@/components/members/KqcTimesDetail'
 import HuntingJobList from '@/components/members/HuntingJobList'
 import HuntingJobDetail from '@/components/members/HuntingJobDetail'
+import CreateKqcTimes from '@/components/members/CreateKqcTimes'
 
 // 共通要素
 import Footer from '@/components/common/Footer'
@@ -82,6 +83,15 @@ export default new Router({
       name: 'KQCTimesDetail',
       components: {
         default: KqcTimesDetail,
+        footer: Footer,
+        header: Header
+      }
+    },
+    {
+      path: '/members/kqc-times/create',
+      name: 'CreateKqcTimes',
+      components: {
+        default: CreateKqcTimes,
         footer: Footer,
         header: Header
       }

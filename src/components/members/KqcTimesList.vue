@@ -32,6 +32,10 @@
           </div>
         </div>
 
+        <div class="post-kqctimes-wrapper">
+          <router-link to="/members/kqc-times/create" class="button-post">KQC Timesを投稿</router-link>
+        </div>
+
         <div id="space">
 
         </div>
@@ -232,10 +236,41 @@ export default {
     margin-left: 740px;
     margin-top: 32px;
     width: auto;
-    height: 100px;
+    height: 600px;
     background: #e0e0e0;
   }
 
+  .post-kqctimes-wrapper{
+    margin-left: 740px;
+    margin-top: 32px;
+    width: auto;
+    height: auto;
+    background: #e0e0e0;
+  }
+  .button-post{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background: #2196F3;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .button-post :hover{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background: #1E88E5;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+  }
   .title-wrapper{
     margin-left: 12px;
     margin-top: 12px;
