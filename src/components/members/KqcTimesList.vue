@@ -26,14 +26,13 @@
           </ul>
         </div>
 
+        <div class="post-kqctimes-wrapper">
+          <router-link to="/members/kqc-times/create" class="button-post">KQC Timesを投稿<br />（Web担）</router-link>
+        </div>
         <div class="sub-content-wrapper">
           <div class="title-wrapper">
             <h3 class="sub-content-title">アーカイブ</h3>
           </div>
-        </div>
-
-        <div class="post-kqctimes-wrapper">
-          <router-link to="/members/kqc-times/create" class="button-post">KQC Timesを投稿</router-link>
         </div>
 
         <div id="space">
@@ -238,6 +237,7 @@ export default {
     width: auto;
     height: 600px;
     background: #e0e0e0;
+    border-radius: 4px; 
   }
 
   .post-kqctimes-wrapper{

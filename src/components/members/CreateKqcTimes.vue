@@ -1,13 +1,12 @@
 <template>
-  <div id="rules">
-    <h1>{{ msg }}</h1>
-    <h2>{{ msg_sub }}</h2>
+  <div id="create-kqctimes">
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'rules',
+  name: 'create-kqctimes',
   data () {
     return {
       msg: 'Welcome to KQC',
@@ -15,17 +14,7 @@ export default {
     }
   },
   created: function(){
-    document.title = '規約 | KQC会員用'
-  },
-
-  created: function () {
-    axios.get('http://127.0.0.1:8000/info')
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      })
+    document.title = 'KQC Timsを作成 | KQC会員用'
   }
 }
 </script>
@@ -36,8 +25,11 @@ h1, h2 {
   font-weight: normal;
 }
 
-#rules{
+#create-kqctimes{
   height: 800px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 a {
   color: #42b983;
