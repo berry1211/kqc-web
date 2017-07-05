@@ -56,7 +56,7 @@ export default {
       msg: 'Welcome to KQC',
       msg_sub: 'KQC Times',
       msg_sub1: '練習・合宿・コンパなどの情報をお伝えします',
-      this_year: '2017年',
+      this_year: '',
       kqctimeslist: [],
       errors: []
     }
@@ -68,6 +68,7 @@ export default {
   created: function (){
     var date = new Date();
     var year = date.getFullYear();
+    this.this_year = year + '年'
     var baseUrl = 'https://api-kqc.herokuapp.com/kqc-times'
     var paramOpe = '?year='
     axios.get(baseUrl + paramOpe + year)
