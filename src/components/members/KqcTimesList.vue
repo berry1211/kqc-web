@@ -66,7 +66,11 @@ export default {
   },
 
   created: function (){
-    axios.get('https://api-kqc.herokuapp.com/kqc-times')
+    var date = new Date();
+    var year = date.getFullYear();
+    var baseUrl = 'https://api-kqc.herokuapp.com/kqc-times'
+    var paramOpe = '?year='
+    axios.get(baseUrl + paramOpe + year)
       .then(response => {
         this.kqctimeslist = response.data
         console.log(response.data);
@@ -237,7 +241,7 @@ export default {
     width: auto;
     height: 600px;
     background: #e0e0e0;
-    border-radius: 4px; 
+    border-radius: 4px;
   }
 
   .post-kqctimes-wrapper{
