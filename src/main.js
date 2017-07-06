@@ -7,11 +7,12 @@ import router from './router'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
+var app = new Vue({
   el: '#app',
   router,
   data : {
-    kqctimeslist: []
+    kqctimeslist: [],
+    boolean: 'True'
   },
   template: '<App/>',
   components: { App }

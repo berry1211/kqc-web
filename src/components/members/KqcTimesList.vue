@@ -16,7 +16,7 @@
           <ul>
             <li v-for="kqctimes of kqctimeslist">
               <div class="times-model-wrapper">
-                <h3>{{ kqctimes.title }}</h3>
+                <router-link :to="{ name: 'kqctimes-detail', params: { id: '!'+kqctimes.id }}" class="kqctimes-link"><h3>{{ kqctimes.title }}</h3></router-link>
                 <p class="sub-title">〜{{ kqctimes.sub_title }}〜</p>
                 <div class="content-summary-wrapper">
                   <p>{{ kqctimes.content }}</p>
@@ -206,6 +206,10 @@ export default {
     font-size: 32px;
     float: left;
     font-weight: normal;
+  }
+  .kqctimes-link{
+    text-decoration: none;
+    color: #2c3e50;
   }
   .sub-title{
     font-size: 20px;
