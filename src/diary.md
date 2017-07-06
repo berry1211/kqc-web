@@ -30,6 +30,8 @@ Informationの基礎部分の開発は終了。
 
  HerokuのCollaboratorに追加すれば、料金をKQCアカウントに任せたまま開発が出来る
 
+ Localでは上手く動作するがHerokuにデプロイした段階でApplicationErrorになる
+
 ## 2017 / 7 / 4
 axiosを使ったGETがうまくいった。
 

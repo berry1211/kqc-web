@@ -21,7 +21,7 @@
                     2017年7月6日
                   </p>
                   <p class="history-content-wrapper">
-                    KQCWeb開発担当、31期の堀井です。この度、KQCWeb β版を開発中です!!
+                    KQCWeb開発担当、31期の堀井です。この度、KQCWeb β版を開発中です!!ほげほｇへおごえｈごえ
                   </p>
                 </div>
               </li>
