@@ -26,6 +26,9 @@
           </ul>
         </div>
 
+        <div class="post-kqctimes-wrapper">
+          <router-link to="/members/kqc-times/create" class="button-post">KQC Timesを投稿<br />（Web担）</router-link>
+        </div>
         <div class="sub-content-wrapper">
           <div class="title-wrapper">
             <h3 class="sub-content-title">アーカイブ</h3>
@@ -37,9 +40,6 @@
         </div>
       </div>
     </div>
-
-
-
   </div>
 </template>
 
@@ -53,7 +53,7 @@ export default {
       msg: 'Welcome to KQC',
       msg_sub: 'KQC Times',
       msg_sub1: '練習・合宿・コンパなどの情報をお伝えします',
-      this_year: '2017年',
+      this_year: '',
       kqctimeslist: [],
       errors: []
     }
@@ -63,7 +63,12 @@ export default {
   },
 
   created: function (){
-    axios.get('https://api-kqc.herokuapp.com/kqc-times')
+    var date = new Date();
+    var year = date.getFullYear();
+    this.this_year = year + '年'
+    var baseUrl = 'https://api-kqc.herokuapp.com/kqc-times'
+    var paramOpe = '?year='
+    axios.get(baseUrl + paramOpe + year)
       .then(response => {
         this.kqctimeslist = response.data
         console.log(response.data);
@@ -232,10 +237,42 @@ export default {
     margin-left: 740px;
     margin-top: 32px;
     width: auto;
-    height: 100px;
+    height: 600px;
     background: #e0e0e0;
+    border-radius: 4px;
   }
 
+  .post-kqctimes-wrapper{
+    margin-left: 740px;
+    margin-top: 32px;
+    width: auto;
+    height: auto;
+    background: #e0e0e0;
+  }
+  .button-post{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background: #2196F3;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .button-post :hover{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background: #1E88E5;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+  }
   .title-wrapper{
     margin-left: 12px;
     margin-top: 12px;

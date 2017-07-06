@@ -1,11 +1,7 @@
-# KQC Web Site
-
-> This is a web site for kqc
-
 # Description
 これはKQC(慶應弓道同好会)の公式HPです。2017年に開発され、アップデートが続いています。
 
-# For Developer
+# For KQC Developer
 HTMLやCSSはもちろん、Node.jsやVue.jsを理解しようとしているあなたは、このプロジェクトを触ってみるべきです。  
 このサイトは主にVue.jsの仕組みの上に成り立っており、Single Page Application(SPA)として構成されています。  
 
@@ -18,12 +14,21 @@ HTMLやCSSはもちろん、Node.jsやVue.jsを理解しようとしているあ
 このプロジェクトでは、独自APIを使用することでデータベースとのやり取りをしています。  
 APIの仕様に関しては、https://github.com/HALU5071/kqc-api のREADMEを参照してください。
 
+ローカル環境で試す際にはNode,Npmを導入した後に、以下のコマンドを実行してください。  
+`npm install`  
+`npm run dev`  
+
+なお、本番環境へデプロイする際には、  
+`npm run build`  
+を実行した後に、生成される/distフォルダをpushしてください。その際には、git subtreeコマンドを使用してください。  
+以下のサイトを参考にすると良いです  
+http://heimusu.hatenablog.com/entry/2017/02/27/220000
 
 # Dependencies of Packages
 このNode.jsプロジェクトでは、以下のPackagesを利用しています。
 
-- Vue
-- vue-router
+- vue >= 2.3.3
+- vue-router >= 2.3.1
 - axios
 
 # Change Log
@@ -33,7 +38,8 @@ KQCサイトのメイン機能をリリースしました。
 # License
 This web site is created by Ha10(Yasunori Horii).  
 Copyright (c) 2017 Ha10. All Rights Reserved.
-<!-- ## Build Setup
+
+# Build Setup
 
 ``` bash
 # install dependencies
@@ -58,4 +64,4 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader). -->
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

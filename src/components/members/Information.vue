@@ -1,7 +1,34 @@
 <template>
   <div id="information">
-    <h1>{{ msg }}</h1>
-    <h2>{{ msg_sub }}</h2>
+    <div id="information-container">
+      <div class="cover-image-wrapper">
+        <div class="cover-image-container">
+          <img src="../../assets/newspaper.png" class="cover-image"/>
+          <h1>{{ msg_sub }}</h1>
+          <h1 class="sub-h1">{{ msg_sub1 }}</h1>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div id="main-content-wrapper">
+          <h2>{{ this_year }}</h2>
+
+        </div>
+
+        <div class="post-information-wrapper">
+          <router-link to="/members/information/create" class="button-post">Informationを投稿</router-link>
+        </div>
+        <div class="sub-content-wrapper">
+          <div class="title-wrapper">
+            <h3 class="sub-content-title">アーカイブ</h3>
+          </div>
+        </div>
+
+        <div id="space">
+
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -11,7 +38,9 @@ export default {
   data () {
     return {
       msg: 'Welcome to KQC',
-      msg_sub: 'Information'
+      msg_sub: 'Information',
+      msg_sub1: 'お知らせですよおぉぉぉぉｘ',
+      this_year: '2017年'
     }
   },
   created: function(){
@@ -27,7 +56,110 @@ h1, h2 {
 }
 
 #information{
-  height: 800px;
+  height: auto;
+}
+h1 {
+  position: absolute;
+  font-size: 48px;
+  top: 40%;
+  left: 40%;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+.sub-h1{
+  position: absolute;
+  font-size: 16px;
+  top: 60%;
+  left: 42%;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+h2 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-left: 12px;
+}
+.cover-image-wrapper{
+  width: 100%;
+  height: 292px;
+}
+.cover-image-container{
+  width: 100%;
+  height: 292px;
+  position: relative;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.cover-image{
+  display: block;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.content-wrapper{
+  position: relative;
+  height: 100%;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+#main-content-wrapper{
+  height: 100%;
+  float: left;
+}
+.post-information-wrapper{
+  margin-left: 740px;
+  margin-top: 32px;
+  width: auto;
+  height: auto;
+  background: #e0e0e0;
+}
+.button-post{
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  background: #2196F3;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+}
+.button-post :hover{
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  background: #1E88E5;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+}
+.sub-content-wrapper{
+  margin-left: 740px;
+  margin-top: 32px;
+  width: auto;
+  height: 600px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+/*スペースのコンポーネント*/
+#space{
+  width: 100%;
+  height: 1px;
+  clear: left;
 }
 
 a {
