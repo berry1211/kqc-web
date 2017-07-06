@@ -31,9 +31,6 @@
         </div>
       </div>
     </div>
-
-
-
   </div>
 </template>
 
@@ -171,6 +168,7 @@ export default {
   .content-wrapper{
     position: relative;
     height: 100%;
+    min-height: 760px;
     width: 960px;
     margin-left: auto;
     margin-right: auto;

@@ -16,20 +16,9 @@
             <ul>
               <li>
                 <div class="list-container">
-                  <h3>KQCWeb正式版 リリースいたしました！</h3>
+                  <h3>KQCWeb 開発にご協力ください!</h3>
                   <p class="date-announced">
-                    2017年7月24日
-                  </p>
-                  <p class="history-content-wrapper">
-                    いつもご利用ありがとうございます！KQCWeb開発担当、31期の堀井です。この度、KQCWeb正式版をリリースいたしました！
-                    開発にご協力いただいた皆、ありがとう！
-                  </p>
-                </div>
-
-                <div class="list-container">
-                  <h3>KQCWeb正式版 リリースいたしました！</h3>
-                  <p class="date-announced">
-                    2017年7月24日
+                    2017年7月6日
                   </p>
                   <p class="history-content-wrapper">
                     いつもご利用ありがとうございます！KQCWeb開発担当、31期の堀井です。この度、KQCWeb正式版をリリースいたしました！
@@ -144,6 +133,7 @@ export default {
   .content-wrapper{
     position: relative;
     height: 100%;
+    min-height: 500px;
     width: 764px;
     margin-left: auto;
     margin-right: auto;

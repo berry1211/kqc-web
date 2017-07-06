@@ -49,6 +49,7 @@ export default {
   #main_contents{
     width: 100%;
     height: auto;
+    min-height: 840px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
