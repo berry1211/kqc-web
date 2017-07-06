@@ -13,6 +13,18 @@
         <div id="main-content-wrapper">
           <h2>{{ this_year }}</h2>
 
+          <ul>
+            <li v-for="info of information_list">
+              <div class="info-model-wrapper">
+                <h3>{{ info.title }}</h3>
+                <p class="sub-title">〜{{ info.sub_title }}〜</p>
+                <div class="content-summary-wrapper">
+                  <p>{{ info.content }}</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
         </div>
 
         <div class="post-information-wrapper">
@@ -34,17 +46,30 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'information',
   data () {
     return {
       msg: 'Welcome to KQC',
       msg_sub: 'Information',
       msg_sub1: 'お知らせですよおぉぉぉぉｘ',
-      this_year: '2017年'
+      this_year: '2017年',
+      information_list: [],
+      errors: []
     }
   },
   created: function(){
     document.title = 'インフォメーション | 会員用'
+  },
+  created: function(){
+    var baseUrl = 'https://api-kqc.herokuapp.com/info';
+    axios.get(baseUrl)
+      .then(response => {
+        this.information_list = response.data
+        console.log(response.data);
+      })
+      .catch(e => {
+        this.errors.push(e)
+      })
   }
 }
 </script>
@@ -115,6 +140,26 @@ h2 {
 #main-content-wrapper{
   height: 100%;
   float: left;
+}
+.info-model-wrapper{
+  width: 700px;
+  margin-left: 8px;
+  margin-right: auto;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+.content-summary-wrapper{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  clear: left;
+}
+.content-summary-wrapper p{
+  font-size: 16px;
+}
+ul{
+  list-style: none;
 }
 .post-information-wrapper{
   margin-left: 740px;

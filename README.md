@@ -12,15 +12,16 @@ HTMLやCSSはもちろん、Node.jsやVue.jsを理解しようとしているあ
 コンポーネントの取扱いについては、index.js内のコメントを参照してください。
 
 このプロジェクトでは、独自APIを使用することでデータベースとのやり取りをしています。  
-APIの仕様に関しては、https://github.com/HALU5071/kqc-api のREADMEを参照してください。
+APIの仕様に関しては、https://github.com/HALU5071/python-django のREADMEを参照してください。
+HTTPクライアントには、`axios`を使用しています。
 
-ローカル環境で試す際にはNode,Npmを導入した後に、以下のコマンドを実行してください。  
+ローカル環境で試す際には`node`,`npm`を導入した後に、以下のコマンドを実行してください。  
 `npm install`  
 `npm run dev`  
 
 なお、本番環境へデプロイする際には、  
 `npm run build`  
-を実行した後に、生成される/distフォルダをpushしてください。その際には、git subtreeコマンドを使用してください。  
+を実行した後に、生成される/distフォルダをpushしてください。その際には、`git subtree`コマンドを使用してください。  
 以下のサイトを参考にすると良いです  
 http://heimusu.hatenablog.com/entry/2017/02/27/220000
 
@@ -30,6 +31,9 @@ http://heimusu.hatenablog.com/entry/2017/02/27/220000
 - vue >= 2.3.3
 - vue-router >= 2.3.1
 - axios
+
+- node >= 8.1.2
+- npm >= 5.0.3
 
 # Change Log
 ## Release 1.0.0

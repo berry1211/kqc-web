@@ -5,6 +5,7 @@
       <form accept-charset="UTF-8">
         <input type="text" name="title" id="title" placeholder="タイトルを入力してください" class="title-input"/>
         <input type="text" name="sub_title" id="sub_title" placeholder="サブタイトルを入力してください" class="sub-title-input"/>
+        <input type="text" name="publisher" id="publisher" placeholder="投稿者名を入力してください" class="publisher-input"/>
         <textarea name="content" id="content" class="content-textarea"></textarea>
       </form>
     </div>
@@ -25,7 +26,7 @@ export default {
     }
   },
   created: function(){
-    document.title = 'Informationを作成 | KQC会員用'
+    document.title = 'インフォメーションを作成 | KQC会員用'
   },
   methods: {
     submit: function (event){
@@ -76,7 +77,7 @@ h1, h2 {
   margin-top: 32px;
 }
 .title-input{
-  width: 800px;
+  width: 936px;
   height: 48px;
   font-size: 32px;
   border-radius: 4px;
@@ -91,9 +92,9 @@ h1, h2 {
   color: #bdbdbd;
 }
 .sub-title-input{
-  width: 400px;
-  height: 36px;
-  font-size: 20px;
+  width: 936px;
+  height: 30px;
+  font-size: 16px;
   padding-left: 12px;
   padding-right: 12px;
   margin-top: 4px;
@@ -103,6 +104,21 @@ h1, h2 {
   clear: left;
 }
 .sub-title-input::-webkit-input-placeholder{
+  color: #bdbdbd;
+}
+.publisher-input{
+  width: 936px;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  border: solid 1px #bdbdbd;
+  clear: left;
+}
+.publisher-input::-webkit-input-placeholder{
   color: #bdbdbd;
 }
 .submit-information{
