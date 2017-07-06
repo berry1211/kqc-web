@@ -110,6 +110,7 @@ h1, h2 {
   height: 48px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 16px;
   background: #2196F3;
   border-radius: 4px;
   color: #fff;
@@ -135,6 +136,7 @@ h1, h2 {
   height: 48px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 16px;
   background: #1E88E5;
   border-radius: 4px;
   color: #fff;
