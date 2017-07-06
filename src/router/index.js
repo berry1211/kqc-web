@@ -10,6 +10,10 @@ import KqcTimesDetail from '@/components/members/KqcTimesDetail'
 import HuntingJobList from '@/components/members/HuntingJobList'
 import HuntingJobDetail from '@/components/members/HuntingJobDetail'
 import CreateKqcTimes from '@/components/members/CreateKqcTimes'
+import CreateInformation from '@/components/members/CreateInformation'
+
+// デベロッパーページ
+import Developer from '@/components/developer/ForDeveloper'
 
 // 共通要素
 import Footer from '@/components/common/Footer'
@@ -56,6 +60,15 @@ export default new Router({
       name: 'Information',
       components: {
         default: Information,
+        footer: Footer,
+        header: Header
+      }
+    },
+    {
+      path: '/members/information/create',
+      name: 'CreateInformation',
+      components: {
+        default: CreateInformation,
         footer: Footer,
         header: Header
       }
@@ -155,6 +168,14 @@ export default new Router({
       name: 'ContestResult',
       components: {
         default: ContestResult,
+        footer: Footer,
+        header: Header
+      }
+    },{
+      path: '/developer',
+      name: 'ForDeveloper',
+      components: {
+        default: Developer,
         footer: Footer,
         header: Header
       }

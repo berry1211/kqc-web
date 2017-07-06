@@ -1,15 +1,16 @@
 <template>
-  <div id="create-kqctimes">
+  <div id="create-information">
     <div id="create-wrapper">
       <h1>{{ message }}</h1>
       <form accept-charset="UTF-8">
         <input type="text" name="title" id="title" placeholder="タイトルを入力してください" class="title-input"/>
         <input type="text" name="sub_title" id="sub_title" placeholder="サブタイトルを入力してください" class="sub-title-input"/>
+        <input type="text" name="publisher" id="publisher" placeholder="投稿者名を入力してください" class="publisher-input"/>
         <textarea name="content" id="content" class="content-textarea"></textarea>
       </form>
     </div>
 
-    <div class="submit-kqctimes" v-on:click="submit">
+    <div class="submit-information" v-on:click="submit">
       <p class="submit-value">投稿</p>
     </div>
 
@@ -21,11 +22,11 @@ export default {
   name: 'create-kqctimes',
   data () {
     return {
-      'message': 'KQC Timesを作成'
+      'message': 'Informationを作成'
     }
   },
   created: function(){
-    document.title = 'KQC Timsを作成 | KQC会員用'
+    document.title = 'インフォメーションを作成 | KQC会員用'
   },
   methods: {
     submit: function (event){
@@ -47,7 +48,7 @@ export default {
       console.log(params);
       axios({
         method: 'post',
-        url: 'https://api-kqc.herokuapp.com/kqc-times',
+        url: 'https://api-kqc.herokuapp.com/info',
         data: params
       }).then(function (response){
         console.log(response.data);
@@ -65,7 +66,7 @@ h1, h2 {
   font-weight: normal;
 }
 
-#create-kqctimes{
+#create-information{
   height: 100%;
   width: 960px;
   margin-left: auto;
@@ -76,7 +77,7 @@ h1, h2 {
   margin-top: 32px;
 }
 .title-input{
-  width: 800px;
+  width: 936px;
   height: 48px;
   font-size: 32px;
   border-radius: 4px;
@@ -91,9 +92,9 @@ h1, h2 {
   color: #bdbdbd;
 }
 .sub-title-input{
-  width: 400px;
-  height: 36px;
-  font-size: 20px;
+  width: 936px;
+  height: 30px;
+  font-size: 16px;
   padding-left: 12px;
   padding-right: 12px;
   margin-top: 4px;
@@ -105,7 +106,23 @@ h1, h2 {
 .sub-title-input::-webkit-input-placeholder{
   color: #bdbdbd;
 }
-.submit-kqctimes{
+.publisher-input{
+  width: 936px;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  border: solid 1px #bdbdbd;
+  clear: left;
+}
+.publisher-input::-webkit-input-placeholder{
+  color: #bdbdbd;
+}
+.submit-information{
+  display: block;
   width: 200px;
   height: 48px;
   margin-left: auto;
@@ -131,7 +148,7 @@ h1, h2 {
   text-align: center;
   line-height: 48px;
 }
-.submit-kqctimes :hover{
+.submit-information :hover{
   width: 200px;
   height: 48px;
   margin-left: auto;
@@ -143,10 +160,6 @@ h1, h2 {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-}
-.submit-value:hover{
-  text-align: center;
-  line-height: 48px;
 }
 a {
   color: #42b983;
