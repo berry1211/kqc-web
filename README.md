@@ -45,7 +45,7 @@ http://heimusu.hatenablog.com/entry/2017/02/27/220000
 - npm >= 5.0.3
 
 # Change Log
-## Release 1.0.0
+## Release 1.0.0 2017 / 7 / ◯◯
 KQCサイトのメイン機能をリリースしました。
 
 # License
