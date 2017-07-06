@@ -101,7 +101,7 @@ export default new Router({
       }
     },
     {
-      path: '/members/kqc-times/create',
+      path: '/members/create-kqc-times',
       name: 'CreateKqcTimes',
       components: {
         default: CreateKqcTimes,
@@ -180,5 +180,8 @@ export default new Router({
         header: Header
       }
     }
-  ]
+  ],
+  scrollBehavior :(to, from, savedPosition) => {
+    return { x: 0, y: 0 }
+  }
 })

@@ -65,7 +65,12 @@ export default {
       .catch(error => {
         console.log(error);
       });
-  }
+  },
+  watch: {
+    $route: function() {
+        window.scrollTo(0,0);
+    }
+}
 }
 </script>
 

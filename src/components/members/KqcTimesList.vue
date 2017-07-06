@@ -27,7 +27,7 @@
         </div>
 
         <div class="post-kqctimes-wrapper">
-          <router-link to="/members/kqc-times/create" class="button-post">KQC Timesを投稿<br />（Web担）</router-link>
+          <router-link to="/members/create-kqc-times" class="button-post">KQC Timesを投稿<br />（Web担）</router-link>
         </div>
         <div class="sub-content-wrapper">
           <div class="title-wrapper">
