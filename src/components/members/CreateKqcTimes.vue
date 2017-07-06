@@ -2,10 +2,10 @@
   <div id="create-kqctimes">
     <div id="create-wrapper">
       <h1>{{ message }}</h1>
-      <form>
-        <input type="text" placeholder="タイトルを入力してください" class="title-input"/>
-        <input type="text" placeholder="サブタイトルを入力してください" class="sub-title-input"/>
-        <textarea name="content" class="content-textarea"></textarea>
+      <form accept-charset="UTF-8">
+        <input type="text" name="title" id="title" placeholder="タイトルを入力してください" class="title-input"/>
+        <input type="text" name="sub_title" id="sub_title" placeholder="サブタイトルを入力してください" class="sub-title-input"/>
+        <textarea name="content" id="content" class="content-textarea"></textarea>
       </form>
     </div>
 
@@ -29,7 +29,31 @@ export default {
   },
   methods: {
     submit: function (event){
-      console.log("Hello, Submit");
+      var title = document.getElementById('title').value;
+      var sub_title = document.getElementById('sub_title').value;
+      var content = document.getElementById('content').value;
+      var date = new Date();
+      var year = date.getFullYear();
+      var month = date.getMonth() + 1;
+      var params = [
+        {
+          "title": title,
+          "sub_title": sub_title,
+          "content": content,
+          "year": year,
+          "month": month
+        }
+      ];
+      console.log(params);
+      axios({
+        method: 'post',
+        url: 'https://api-kqc.herokuapp.com/kqc-times',
+        data: params
+      }).then(function (response){
+        console.log(response.data);
+      }).catch(function (error){
+        console.log(error.status);
+      });
     }
   }
 }
@@ -95,7 +119,7 @@ h1, h2 {
   cursor: pointer;
 }
 .content-textarea{
-  width: 100%;
+  width: 944px;
   height: 600px;
   border-radius: 4px;
   border: solid 1px #bdbdbd;
