@@ -11,8 +11,7 @@ var app = new Vue({
   el: '#app',
   router,
   data : {
-    kqctimeslist: [],
-    boolean: 'True'
+    kqctimeslist: []
   },
   template: '<App/>',
   components: { App }
