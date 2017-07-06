@@ -17,7 +17,7 @@
       </div>
 
       <div class="login-button-wrapper">
-        <router-link to="/members" class="header-login">ログイン</router-link>
+        <router-link to="/members" class="header-login">会員専用</router-link>
       </div>
     </div>
   </div>
