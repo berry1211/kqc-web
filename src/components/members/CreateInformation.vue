@@ -1,5 +1,5 @@
 <template>
-  <div id="create-kqctimes">
+  <div id="create-information">
     <div id="create-wrapper">
       <h1>{{ message }}</h1>
       <form accept-charset="UTF-8">
@@ -9,7 +9,7 @@
       </form>
     </div>
 
-    <div class="submit-kqctimes" v-on:click="submit">
+    <div class="submit-information" v-on:click="submit">
       <p class="submit-value">投稿</p>
     </div>
 
@@ -21,11 +21,11 @@ export default {
   name: 'create-kqctimes',
   data () {
     return {
-      'message': 'KQC Timesを作成'
+      'message': 'Informationを作成'
     }
   },
   created: function(){
-    document.title = 'KQC Timsを作成 | KQC会員用'
+    document.title = 'Informationを作成 | KQC会員用'
   },
   methods: {
     submit: function (event){
@@ -47,7 +47,7 @@ export default {
       console.log(params);
       axios({
         method: 'post',
-        url: 'https://api-kqc.herokuapp.com/kqc-times',
+        url: 'https://api-kqc.herokuapp.com/info',
         data: params
       }).then(function (response){
         console.log(response.data);
@@ -65,7 +65,7 @@ h1, h2 {
   font-weight: normal;
 }
 
-#create-kqctimes{
+#create-information{
   height: 100%;
   width: 960px;
   margin-left: auto;
@@ -105,11 +105,13 @@ h1, h2 {
 .sub-title-input::-webkit-input-placeholder{
   color: #bdbdbd;
 }
-.submit-kqctimes{
+.submit-information{
+  display: block;
   width: 200px;
   height: 48px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 16px;
   background: #2196F3;
   border-radius: 4px;
   color: #fff;
@@ -130,21 +132,18 @@ h1, h2 {
   text-align: center;
   line-height: 48px;
 }
-.submit-kqctimes :hover{
+.submit-information :hover{
   width: 200px;
   height: 48px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 16px;
   background: #1E88E5;
   border-radius: 4px;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-}
-.submit-value:hover{
-  text-align: center;
-  line-height: 48px;
 }
 a {
   color: #42b983;

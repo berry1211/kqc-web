@@ -3,7 +3,7 @@
     <div id="information-container">
       <div class="cover-image-wrapper">
         <div class="cover-image-container">
-          <img src="../../assets/newspaper.png" class="cover-image"/>
+          <img src="../../assets/information.png" class="cover-image"/>
           <h1>{{ msg_sub }}</h1>
           <h1 class="sub-h1">{{ msg_sub1 }}</h1>
         </div>
