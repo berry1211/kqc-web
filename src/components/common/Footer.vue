@@ -1,9 +1,11 @@
 <template>
   <div id="footer">
-    <div class="copy-right-wrapper">
-      <p class="copy-right">
-        Copyright (c) 2017 Ha10 ( Yasunori Horii ). All Rights Reserved
-      </p>
+    <div class="content-wrapper">
+      <div class="copy-right-container">
+        <p class="copy-right">
+          Copyright (c) 2017 Ha10 ( Yasunori Horii ). All Rights Reserved
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -34,6 +36,7 @@ h1, h2 {
     width: 375px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 32px;
   }
   .copy-right{
     padding-top: 36px;
@@ -52,15 +55,25 @@ h1, h2 {
     background: #424242;
   }
 
-  .copy-right-wrapper{
-    width: 440px;
+  .content-wrapper{
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
+  .copy-right-container{
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
   .copy-right{
-    padding-top: 24px;
+    display: block;
+    width: auto;
+    margin-top: 48px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     display: inline-block;
   }
 }

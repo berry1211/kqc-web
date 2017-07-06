@@ -3,7 +3,9 @@
     <div class="header-content-wrapper">
       <div class="logo-wrapper">
         <router-link to="/"><img src="../../assets/kqc.png" height="30px"/></router-link>
+        <p class="version-code">ver.β</p>
       </div>
+
 
       <div class="global-bar-wrapper">
         <div class="global-bar-container">
@@ -71,12 +73,15 @@ h1, h2 {
   .global-bar-wrapper{
     display: block;
     width: 400px;
-    height: inherit;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
+  .global-bar-container{
+    height: auto;
+  }
   .bar-content{
-    height: inherit;
+    height: auto;
     line-height: 60px;
     text-decoration: none;
     display: inline-block;
@@ -91,6 +96,10 @@ h1, h2 {
     line-height: 36px;
     padding-top: 15px;
     float: left;
+  }
+  .version-code{
+    display: inline-block;
+    color: #fff;
   }
   .bar-content p{
     margin-top: auto;
