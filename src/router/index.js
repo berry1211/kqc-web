@@ -101,7 +101,7 @@ export default new Router({
       }
     },
     {
-      path: '/members/kqc-times/create',
+      path: '/members/create-kqctimes',
       name: 'CreateKqcTimes',
       components: {
         default: CreateKqcTimes,
