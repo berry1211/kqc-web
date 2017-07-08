@@ -143,9 +143,15 @@ export default {
     width: 100%;
     height: 100%;
     float: left;
+    background: #fff;
+    border-radius: 4px;
+    border-bottom: solid 2px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
+    border-right: solid 1px #E0E0E0;
   }
-  #developer-wrapper{
+  .developer-wrapper{
     height: 100%;
+    background: #F5F5F5;
   }
   .list-wrapper{
     width: 100%;
@@ -154,8 +160,8 @@ export default {
   }
   .list-container{
     width: auto;
-    margin-left: 8px;
-    margin-right: auto;
+    margin-left: 32px;
+    margin-right: 32px;
     margin-top: 32px;
     margin-bottom: 64px;
   }
@@ -176,7 +182,8 @@ export default {
   h2 {
     font-size: 32px;
     font-weight: normal;
-    margin-left: 12px;
+    margin-left: 32px;
+    padding-top: 24px;
   }
 
   h3{

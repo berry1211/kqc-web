@@ -152,10 +152,14 @@ export default {
   h2 {
     font-size: 32px;
     font-weight: normal;
-    margin-left: 12px;
+    margin-left: 32px;
+    padding-top: 24px;
+    margin-right: 32px;
+    padding-bottom: 24px;
   }
   #kqctimes-container{
     height: 100%;
+    background: #F5F5F5;
   }
   .cover-image-wrapper{
     width: 100%;
@@ -179,7 +183,7 @@ export default {
   .content-wrapper{
     position: relative;
     height: 100%;
-    width: 960px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 48px;
@@ -188,10 +192,14 @@ export default {
   #main-content-wrapper{
     height: 100%;
     float: left;
+    background: #fff;
+    border-bottom: solid 2px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
+    border-right: solid 1px #E0E0E0;
   }
   .times-model-wrapper{
-    width: 700px;
-    margin-left: 8px;
+    width: 748px;
+    margin-left: 32px;
     margin-right: auto;
     margin-top: 32px;
     margin-bottom: 64px;
@@ -237,17 +245,8 @@ export default {
     font-size: 16px;
   }
 
-  .sub-content-wrapper{
-    margin-left: 740px;
-    margin-top: 32px;
-    width: auto;
-    height: 600px;
-    background: #e0e0e0;
-    border-radius: 4px;
-  }
-
   .post-kqctimes-wrapper{
-    margin-left: 740px;
+    margin-left: 800px;
     margin-top: 32px;
     width: auto;
     height: auto;
@@ -264,6 +263,10 @@ export default {
     border-radius: 4px;
     color: #fff;
     font-weight: bold;
+    border-bottom: solid 2px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
+    border-right: solid 1px #E0E0E0;
+    border-radius: 4px;
   }
   .button-post :hover{
     display: block;
@@ -276,14 +279,39 @@ export default {
     border-radius: 4px;
     color: #fff;
     font-weight: bold;
+    border-bottom: solid 2px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
+    border-right: solid 1px #E0E0E0;
+    border-radius: 4px;
   }
-  .title-wrapper{
-    margin-left: 12px;
-    margin-top: 12px;
+
+
+  /*サブコンテンツのCSS*/
+  .sub-content-wrapper{
+    margin-left: 800px;
+    margin-top: 16px;
+    width: auto;
+    height: 600px;
+    background: #fff;
+    border-bottom: solid 2px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
+    border-right: solid 1px #E0E0E0;
+    border-radius: 4px;
   }
+
   .sub-content-title{
     font-size: 16px;
+    text-align: center;
   }
+
+  .title-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    height: 32px;
+    width: 80px;
+  }
+
 
   /*スペースのコンポーネント*/
   #space{
