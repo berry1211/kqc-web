@@ -32,6 +32,10 @@
         <div class="sub-content-wrapper">
           <div class="title-wrapper">
             <h3 class="sub-content-title">アーカイブ</h3>
+            <ul>
+              <li class="list-year">2017年</li>
+              <li class="list-year">2016年</li>
+            </ul>
           </div>
         </div>
 
@@ -300,8 +304,9 @@ export default {
   }
 
   .sub-content-title{
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
+    margin-bottom: 16px;
   }
 
   .title-wrapper{
@@ -309,7 +314,16 @@ export default {
     margin-right: auto;
     padding-top: 12px;
     height: 32px;
-    width: 80px;
+    width: 90px;
+  }
+  .list-year{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 

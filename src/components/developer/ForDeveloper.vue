@@ -66,7 +66,7 @@ export default {
     position: absolute;
     top: 32px;
     left: 396px;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
     display: block;
   }
@@ -164,9 +164,6 @@ export default {
     margin-right: 32px;
     margin-top: 32px;
     margin-bottom: 64px;
-  }
-  h1 {
-    font-weight: normal;
   }
   .sub-h1{
     position: absolute;

@@ -6,23 +6,23 @@
         <div class="main-content-wrapper">
           <h2>{{ this_year }}</h2>
 
-          <ul>
-            <li v-for="kqctimes of kqctimeslist">
-              <div class="times-model-wrapper">
-                <h3>{{ kqctimes.title }}</h3>
-                <p class="sub-title">〜{{ kqctimes.sub_title }}〜</p>
-                <div class="content-summary-wrapper">
-                  <p>{{ kqctimes.content }}</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <div class="times-model-wrapper">
+            <h3>{{ kqctimes.title }}</h3>
+            <p class="sub-title">〜{{ kqctimes.sub_title }}〜</p>
+            <div class="content-summary-wrapper">
+              <p>{{ kqctimes.content }}</p>
+            </div>
+          </div>
 
         </div>
 
         <div class="sub-content-wrapper">
           <div class="title-wrapper">
             <h3 class="sub-content-title">アーカイブ</h3>
+            <ul>
+              <li>2017年</li>
+              <li>2016年</li>
+            </ul>
           </div>
         </div>
 
@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import main from '../../main.js'
 export default {
   name: 'kqctimes',
   data () {
@@ -43,8 +42,7 @@ export default {
       msg: 'Welcome to KQC',
       msg_sub: 'KQC Times',
       msg_sub1: '練習・合宿・コンパなどの情報をお伝えします',
-      this_year: '2017年',
-      kqctimeslist: []
+      this_year: '2017年'
     }
   },
   created: function(){
@@ -59,8 +57,9 @@ export default {
     console.log(idNum);
     axios.get('https://api-kqc.herokuapp.com/kqc-times/'+idNum)
       .then(response => {
-        this.kqctimeslist = response.data
+        kqctimes = response.data
         console.log(response.data);
+        console.log('List:', kqctimes);
       })
       .catch(error => {
         console.log(error);
