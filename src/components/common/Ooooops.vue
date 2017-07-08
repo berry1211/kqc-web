@@ -52,8 +52,8 @@ h2{
 
 .logo{
   display: block;
-  width: 200px;
-  margin-top: 120px;
+  width: 100px;
+  margin-top: 250px;
   margin-left: auto;
   margin-right: auto;
 }
