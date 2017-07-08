@@ -66,7 +66,7 @@ export default {
     var date = new Date();
     var year = date.getFullYear();
     this.this_year = year + '年'
-    var baseUrl = 'https://api-kqc.herokuapp.com/kqc-times'
+    var baseUrl = 'https://api-kqc.herokuapp.com/kqc-times/'
     var paramOpe = '?year='
     axios.get(baseUrl + paramOpe + year)
       .then(response => {

@@ -18,7 +18,6 @@ export default {
   name: 'huntingjob',
   data () {
     return {
-      msg: 'Welcome to KQC',
       msg_sub: 'Hunting Job',
       msg_sub1: '就活情報を配信します'
     }

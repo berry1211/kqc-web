@@ -57,7 +57,7 @@ export default {
       idNum = href.substring(href.indexOf("!")+1, href.length)
     }
     console.log(idNum);
-    axios.get('https://api-kqc.herokuapp.com/kqc-times?id='+idNum)
+    axios.get('https://api-kqc.herokuapp.com/kqc-times/'+idNum)
       .then(response => {
         this.kqctimeslist = response.data
         console.log(response.data);
