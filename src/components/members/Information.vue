@@ -33,6 +33,10 @@
         <div class="sub-content-wrapper">
           <div class="title-wrapper">
             <h3 class="sub-content-title">アーカイブ</h3>
+            <ul>
+              <li class="list-year">2017年</li>
+              <li class="list-year">2016年</li>
+            </ul>
           </div>
         </div>
 
@@ -63,13 +67,13 @@ export default {
   created: function(){
     var baseUrl = 'https://api-kqc.herokuapp.com/information/';
     axios.get(baseUrl)
-      .then(response => {
-        this.information_list = response.data
-        console.log(response.data);
-      })
-      .catch(e => {
-        this.errors.push(e)
-      })
+    .then(response => {
+      this.information_list = response.data
+      console.log(response.data);
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
   }
 }
 </script>
@@ -82,6 +86,11 @@ h1, h2 {
 
 #information{
   height: auto;
+}
+
+#information-container{
+  height: 100%;
+  background: #F5F5F5;
 }
 h1 {
   position: absolute;
@@ -108,7 +117,10 @@ h1 {
 h2 {
   font-size: 32px;
   font-weight: normal;
-  margin-left: 12px;
+  margin-left: 32px;
+  padding-top: 24px;
+  margin-right: 32px;
+  padding-bottom: 24px;
 }
 .cover-image-wrapper{
   width: 100%;
@@ -131,7 +143,7 @@ h2 {
 .content-wrapper{
   position: relative;
   height: 100%;
-  width: 960px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
@@ -140,10 +152,14 @@ h2 {
 #main-content-wrapper{
   height: 100%;
   float: left;
+  background: #fff;
+  border-bottom: solid 2px #E0E0E0;
+  border-left: solid 1px #E0E0E0;
+  border-right: solid 1px #E0E0E0;
 }
 .info-model-wrapper{
-  width: 700px;
-  margin-left: 8px;
+  width: 748px;
+  margin-left: 32px;
   margin-right: auto;
   margin-top: 32px;
   margin-bottom: 64px;
@@ -162,7 +178,7 @@ ul{
   list-style: none;
 }
 .post-information-wrapper{
-  margin-left: 740px;
+  margin-left: 800px;
   margin-top: 32px;
   width: auto;
   height: auto;
@@ -193,12 +209,37 @@ ul{
   font-weight: bold;
 }
 .sub-content-wrapper{
-  margin-left: 740px;
-  margin-top: 32px;
+  margin-left: 800px;
+  margin-top: 16px;
   width: auto;
   height: 600px;
-  background: #e0e0e0;
+  background: #fff;
+  border-bottom: solid 2px #E0E0E0;
+  border-left: solid 1px #E0E0E0;
+  border-right: solid 1px #E0E0E0;
   border-radius: 4px;
+}
+.sub-content-title{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.title-wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  height: 32px;
+  width: 90px;
+}
+.list-year{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*スペースのコンポーネント*/
 #space{
