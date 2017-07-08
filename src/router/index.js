@@ -18,6 +18,7 @@ import Developer from '@/components/developer/ForDeveloper'
 // 共通要素
 import Footer from '@/components/common/Footer'
 import Header from '@/components/common/Header'
+import Oops from '@/components/common/Ooooops'
 
 // グローバルメニュー(常に表示されているメニュー)要素
 import Schedule from '@/components/menu/Schedule'
@@ -135,6 +136,11 @@ export default new Router({
         footer: Footer,
         header: Header
       }
+    },
+    {
+      path: '/ooops',
+      name: 'Ooops',
+      component: Oops
     },
     {
       path: '/schedule',

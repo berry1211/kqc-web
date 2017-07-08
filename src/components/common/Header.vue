@@ -3,7 +3,7 @@
     <div class="header-content-wrapper">
       <div class="logo-wrapper">
         <router-link to="/"><img src="../../assets/kqc.png" height="30px"/></router-link>
-        <p class="version-code">ver.β</p>
+        <p class="version-code">ver.α</p>
       </div>
 
 
