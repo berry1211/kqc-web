@@ -61,7 +61,7 @@ export default {
     document.title = 'インフォメーション | 会員用'
   },
   created: function(){
-    var baseUrl = 'https://api-kqc.herokuapp.com/info';
+    var baseUrl = 'https://api-kqc.herokuapp.com/information/';
     axios.get(baseUrl)
       .then(response => {
         this.information_list = response.data

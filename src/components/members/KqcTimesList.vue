@@ -16,7 +16,7 @@
           <ul>
             <li v-for="kqctimes of kqctimeslist">
               <div class="times-model-wrapper">
-                <h3>{{ kqctimes.title }}</h3>
+                <router-link :to="{ name: 'kqctimes-detail', params: { id: '!'+kqctimes.id }}" class="kqctimes-link"><h3>{{ kqctimes.title }}</h3></router-link>
                 <p class="sub-title">〜{{ kqctimes.sub_title }}〜</p>
                 <div class="content-summary-wrapper">
                   <p>{{ kqctimes.content }}</p>
@@ -27,11 +27,15 @@
         </div>
 
         <div class="post-kqctimes-wrapper">
-          <router-link to="/members/kqc-times/create" class="button-post">KQC Timesを投稿<br />（Web担）</router-link>
+          <router-link to="/members/create-kqctimes" class="button-post">KQC Timesを投稿<br />（Web担）</router-link>
         </div>
         <div class="sub-content-wrapper">
           <div class="title-wrapper">
             <h3 class="sub-content-title">アーカイブ</h3>
+            <ul>
+              <li class="list-year">2017年</li>
+              <li class="list-year">2016年</li>
+            </ul>
           </div>
         </div>
 
@@ -66,7 +70,7 @@ export default {
     var date = new Date();
     var year = date.getFullYear();
     this.this_year = year + '年'
-    var baseUrl = 'https://api-kqc.herokuapp.com/kqc-times'
+    var baseUrl = 'https://api-kqc.herokuapp.com/kqc-times/'
     var paramOpe = '?year='
     axios.get(baseUrl + paramOpe + year)
       .then(response => {
@@ -152,10 +156,14 @@ export default {
   h2 {
     font-size: 32px;
     font-weight: normal;
-    margin-left: 12px;
+    margin-left: 32px;
+    padding-top: 24px;
+    margin-right: 32px;
+    padding-bottom: 24px;
   }
   #kqctimes-container{
     height: 100%;
+    background: #F5F5F5;
   }
   .cover-image-wrapper{
     width: 100%;
@@ -179,7 +187,7 @@ export default {
   .content-wrapper{
     position: relative;
     height: 100%;
-    width: 960px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 48px;
@@ -188,10 +196,14 @@ export default {
   #main-content-wrapper{
     height: 100%;
     float: left;
+    background: #fff;
+    border-bottom: solid 2px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
+    border-right: solid 1px #E0E0E0;
   }
   .times-model-wrapper{
-    width: 700px;
-    margin-left: 8px;
+    width: 748px;
+    margin-left: 32px;
     margin-right: auto;
     margin-top: 32px;
     margin-bottom: 64px;
@@ -206,6 +218,10 @@ export default {
     font-size: 32px;
     float: left;
     font-weight: normal;
+  }
+  .kqctimes-link{
+    text-decoration: none;
+    color: #2c3e50;
   }
   .sub-title{
     font-size: 20px;
@@ -233,17 +249,8 @@ export default {
     font-size: 16px;
   }
 
-  .sub-content-wrapper{
-    margin-left: 740px;
-    margin-top: 32px;
-    width: auto;
-    height: 600px;
-    background: #e0e0e0;
-    border-radius: 4px;
-  }
-
   .post-kqctimes-wrapper{
-    margin-left: 740px;
+    margin-left: 800px;
     margin-top: 32px;
     width: auto;
     height: auto;
@@ -260,6 +267,10 @@ export default {
     border-radius: 4px;
     color: #fff;
     font-weight: bold;
+    border-bottom: solid 2px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
+    border-right: solid 1px #E0E0E0;
+    border-radius: 4px;
   }
   .button-post :hover{
     display: block;
@@ -272,14 +283,49 @@ export default {
     border-radius: 4px;
     color: #fff;
     font-weight: bold;
+    border-bottom: solid 2px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
+    border-right: solid 1px #E0E0E0;
+    border-radius: 4px;
   }
-  .title-wrapper{
-    margin-left: 12px;
-    margin-top: 12px;
+
+
+  /*サブコンテンツのCSS*/
+  .sub-content-wrapper{
+    margin-left: 800px;
+    margin-top: 16px;
+    width: auto;
+    height: 600px;
+    background: #fff;
+    border-bottom: solid 2px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
+    border-right: solid 1px #E0E0E0;
+    border-radius: 4px;
   }
+
   .sub-content-title{
-    font-size: 16px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 16px;
   }
+
+  .title-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    height: 32px;
+    width: 90px;
+  }
+  .list-year{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
   /*スペースのコンポーネント*/
   #space{

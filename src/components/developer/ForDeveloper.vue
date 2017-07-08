@@ -16,24 +16,12 @@
             <ul>
               <li>
                 <div class="list-container">
-                  <h3>KQCWeb正式版 リリースいたしました！</h3>
+                  <h3>KQCWeb 開発にご協力ください!</h3>
                   <p class="date-announced">
-                    2017年7月24日
+                    2017年7月6日
                   </p>
                   <p class="history-content-wrapper">
-                    いつもご利用ありがとうございます！KQCWeb開発担当、31期の堀井です。この度、KQCWeb正式版をリリースいたしました！
-                    開発にご協力いただいた皆、ありがとう！
-                  </p>
-                </div>
-
-                <div class="list-container">
-                  <h3>KQCWeb正式版 リリースいたしました！</h3>
-                  <p class="date-announced">
-                    2017年7月24日
-                  </p>
-                  <p class="history-content-wrapper">
-                    いつもご利用ありがとうございます！KQCWeb開発担当、31期の堀井です。この度、KQCWeb正式版をリリースいたしました！
-                    開発にご協力いただいた皆、ありがとう！
+                    KQCWeb開発担当、31期の堀井です。この度、KQCWeb β版を開発中です!!いろいろと便利なサイトにしていきたいので、皆が気になったことはどんどんフィードバックを貰えればと思います!!
                   </p>
                 </div>
               </li>
@@ -78,7 +66,7 @@ export default {
     position: absolute;
     top: 32px;
     left: 396px;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
     display: block;
   }
@@ -144,6 +132,7 @@ export default {
   .content-wrapper{
     position: relative;
     height: 100%;
+    min-height: 500px;
     width: 764px;
     margin-left: auto;
     margin-right: auto;
@@ -154,9 +143,15 @@ export default {
     width: 100%;
     height: 100%;
     float: left;
+    background: #fff;
+    border-radius: 4px;
+    border-bottom: solid 2px #E0E0E0;
+    border-left: solid 1px #E0E0E0;
+    border-right: solid 1px #E0E0E0;
   }
-  #developer-wrapper{
+  .developer-wrapper{
     height: 100%;
+    background: #F5F5F5;
   }
   .list-wrapper{
     width: 100%;
@@ -165,13 +160,10 @@ export default {
   }
   .list-container{
     width: auto;
-    margin-left: 8px;
-    margin-right: auto;
+    margin-left: 32px;
+    margin-right: 32px;
     margin-top: 32px;
     margin-bottom: 64px;
-  }
-  h1 {
-    font-weight: normal;
   }
   .sub-h1{
     position: absolute;
@@ -187,7 +179,8 @@ export default {
   h2 {
     font-size: 32px;
     font-weight: normal;
-    margin-left: 12px;
+    margin-left: 32px;
+    padding-top: 24px;
   }
 
   h3{

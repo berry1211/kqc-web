@@ -2,6 +2,12 @@
 これは、kqc-webとkqc-apiの開発記録である。
 基本的にはcommitログを見れば一目瞭然だが、開発途中に考えていたことをメモ
 
+## 2017 / 7 / 7
+13:12  
+  kqc-timesのリクエストに  
+  747ms
+  197ms
+
 ## 2017 / 7 / 6
 Informationの基礎部分の開発は終了。  
 ここから細かい修正を加えていく。  
@@ -29,6 +35,8 @@ Informationの基礎部分の開発は終了。
  HerokuのプランをHobbyに変える必要があるかも  
 
  HerokuのCollaboratorに追加すれば、料金をKQCアカウントに任せたまま開発が出来る
+
+ Localでは上手く動作するがHerokuにデプロイした段階でApplicationErrorになる
 
 ## 2017 / 7 / 4
 axiosを使ったGETがうまくいった。

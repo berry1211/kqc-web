@@ -47,7 +47,7 @@ export default {
   }
 
   #club-members{
-    height: 800px;
+    height: 840px;
     width: 960px;
     margin-left: auto;
     margin-right: auto;

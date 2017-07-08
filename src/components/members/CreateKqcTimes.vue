@@ -47,11 +47,11 @@ export default {
       console.log(params);
       axios({
         method: 'post',
-        url: 'https://api-kqc.herokuapp.com/kqc-times',
+        url: 'https://api-kqc.herokuapp.com/kqc-times/',
         data: params
-      }).then(function (response){
+      }).then(response => {
         console.log(response.data);
-      }).catch(function (error){
+      }).catch(error =>{
         console.log(error.status);
       });
     }

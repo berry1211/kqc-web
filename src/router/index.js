@@ -92,8 +92,8 @@ export default new Router({
       }
     },
     {
-      path: '/members/kqc-times/detail',
-      name: 'KQCTimesDetail',
+      path: '/members/kqc-times/:id',
+      name: 'kqctimes-detail',
       components: {
         default: KqcTimesDetail,
         footer: Footer,
@@ -101,7 +101,7 @@ export default new Router({
       }
     },
     {
-      path: '/members/kqc-times/create',
+      path: '/members/create-kqctimes',
       name: 'CreateKqcTimes',
       components: {
         default: CreateKqcTimes,
