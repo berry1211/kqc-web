@@ -16,7 +16,10 @@
         </div>
       </div>
       <div class="login-button-wrapper">
-        <img src="../../assets/ic_person_white_24dp.png" class="member-image" />
+        <div class="credential-container">
+          <img src="../../assets/ic_person_white_24dp.png" class="member-image" />
+          <p>Members</p>
+        </div>
       </div>
     </div>
   </div>
@@ -30,7 +33,7 @@ export default {
     }
   },
   created: function (){
-    // パスワードを取得しておく
+
   }
 }
 </script>
@@ -119,19 +122,28 @@ h1, h2 {
     font-weight: bold;
   }
   .login-button-wrapper{
-    width: 100px;
+    width: 120px;
     height: 60px;
     margin-left: auto;
     line-height: 60px;
   }
+  .credential-container p{
+    display: inline-block;
+    line-height: 60px;
+    padding-top: 2px;
+    font-weight: bold;
+    margin-left: 4px;
+    color: #fff;
+  }
   .member-image{
     display: block;
-    width: 36px;
-    height: 36px;
-    padding-top: 12px;
+    width: 30px;
+    height: 30px;
+    padding-top: 16px;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    float: left;
   }
   #header{
     height: 60px;

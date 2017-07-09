@@ -17,7 +17,7 @@
       </div>
 
       <div class="login-button-wrapper">
-        <div class="header-login" v-on:click="onCredential"><p>会員専用</p></div>
+        <div class="header-login" v-on:click="checkCredential"><p>会員専用</p></div>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ export default {
     }
   },
   methods: {
-    onCredential: function (event){
+    checkCredential: function (event){
       var password = prompt("Input Password", "")
       console.log(password);
       if (password == 'hogehoge') {
