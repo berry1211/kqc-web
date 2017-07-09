@@ -1,3 +1,4 @@
+<!-- このテンプレートは、パスワード認証が不正である場合に表示します -->
 <template>
   <div id="ooops">
     <div class="main-contents-wrapper">

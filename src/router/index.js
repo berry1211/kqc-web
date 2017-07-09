@@ -18,6 +18,7 @@ import Developer from '@/components/developer/ForDeveloper'
 // 共通要素
 import Footer from '@/components/common/Footer'
 import Header from '@/components/common/Header'
+import HeaderForMembers from '@/components/common/HeaderForMembers'
 import Oops from '@/components/common/Ooooops'
 
 // グローバルメニュー(常に表示されているメニュー)要素
@@ -62,7 +63,7 @@ export default new Router({
       components: {
         default: Information,
         footer: Footer,
-        header: Header
+        header: HeaderForMembers
       }
     },
     {
@@ -71,7 +72,7 @@ export default new Router({
       components: {
         default: CreateInformation,
         footer: Footer,
-        header: Header
+        header: HeaderForMembers
       }
     },
     {
@@ -80,7 +81,7 @@ export default new Router({
       components: {
         default: Rules,
         footer: Footer,
-        header: Header
+        header: HeaderForMembers
       }
     },
     {
@@ -89,7 +90,7 @@ export default new Router({
       components: {
         default: KqcTimesList,
         footer: Footer,
-        header: Header
+        header: HeaderForMembers
       }
     },
     {
@@ -98,7 +99,7 @@ export default new Router({
       components: {
         default: KqcTimesDetail,
         footer: Footer,
-        header: Header
+        header: HeaderForMembers
       }
     },
     {
@@ -107,7 +108,7 @@ export default new Router({
       components: {
         default: CreateKqcTimes,
         footer: Footer,
-        header: Header
+        header: HeaderForMembers
       }
     },
     {
@@ -116,7 +117,7 @@ export default new Router({
       components: {
         default: HuntingJobList,
         footer: Footer,
-        header: Header
+        header: HeaderForMembers
       }
     },
     {
@@ -125,7 +126,7 @@ export default new Router({
       components: {
         default: HuntingJobDetail,
         footer: Footer,
-        header: Header
+        header: HeaderForMembers
       }
     },
     {
@@ -134,7 +135,7 @@ export default new Router({
       components: {
         default: ClubMembers,
         footer: Footer,
-        header: Header
+        header: HeaderForMembers
       }
     },
     {
@@ -183,7 +184,7 @@ export default new Router({
       components: {
         default: Developer,
         footer: Footer,
-        header: Header
+        header: HeaderForMembers
       }
     }
   ]

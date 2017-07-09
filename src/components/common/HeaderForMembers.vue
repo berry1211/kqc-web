@@ -15,9 +15,8 @@
           <router-link to="/links" class="bar-content"><p>リンク</p></router-link>
         </div>
       </div>
-
       <div class="login-button-wrapper">
-        <div class="header-login" v-on:click="onCredential"><p>会員専用</p></div>
+        <img src="../../assets/ic_person_white_24dp.png" class="member-image" />
       </div>
     </div>
   </div>
@@ -25,23 +24,9 @@
 
 <script>
 export default {
-  name: 'header',
+  name: 'header-for-members',
   data () {
     return {
-    }
-  },
-  methods: {
-    onCredential: function (event){
-      var password = prompt("Input Password", "")
-      console.log(password);
-      if (password == 'hogehoge') {
-        this.$router.push({ path: '/members' })
-      }
-      else if (password == '') {
-        alert('Invalid Password')
-      } else {
-
-      }
     }
   },
   created: function (){
@@ -103,7 +88,6 @@ h1, h2 {
     text-decoration: none;
     display: inline-block;
     float: left;
-    color: #fff;
     text-align: center;
   }
   .bar-content :hover{
@@ -127,32 +111,27 @@ h1, h2 {
     font-weight: bold;
   }
   .header-login{
-    height: auto;
-    line-height: 60px;
+    width: 120px;
+    margin-right: 0px;
+    margin-left: auto;
+    color: #ffffff;
     text-decoration: none;
-    display: inline-block;
-    float: left;
-    color: #fff;
-    text-align: center;
-  }
-  .header-login :hover{
-    background: #212121;
-  }
-  .header-login p{
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 24px;
-    padding-right: 24px;
     font-weight: bold;
   }
   .login-button-wrapper{
-    width: 118px;
+    width: 100px;
+    height: 60px;
     margin-left: auto;
     line-height: 60px;
-    cursor: pointer;
   }
-  .for-members{
-    font-size: 20px;
+  .member-image{
+    display: block;
+    width: 36px;
+    height: 36px;
+    padding-top: 12px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   #header{
     height: 60px;
