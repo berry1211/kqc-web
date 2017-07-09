@@ -15,9 +15,11 @@
           <router-link to="/links" class="bar-content"><p>リンク</p></router-link>
         </div>
       </div>
-
       <div class="login-button-wrapper">
-        <div class="header-login" v-on:click="checkCredential"><p>会員専用</p></div>
+        <div class="credential-container">
+          <img src="../../assets/ic_person_white_24dp.png" class="member-image" />
+          <p>Members</p>
+        </div>
       </div>
     </div>
   </div>
@@ -25,27 +27,13 @@
 
 <script>
 export default {
-  name: 'header',
+  name: 'header-for-members',
   data () {
     return {
     }
   },
-  methods: {
-    checkCredential: function (event){
-      var password = prompt("Input Password", "")
-      console.log(password);
-      if (password == 'hogehoge') {
-        this.$router.push({ path: '/members' })
-      }
-      else if (password == '') {
-        alert('Invalid Password')
-      } else {
-
-      }
-    }
-  },
   created: function (){
-    // パスワードを取得しておく
+
   }
 }
 </script>
@@ -103,7 +91,6 @@ h1, h2 {
     text-decoration: none;
     display: inline-block;
     float: left;
-    color: #fff;
     text-align: center;
   }
   .bar-content :hover{
@@ -127,32 +114,36 @@ h1, h2 {
     font-weight: bold;
   }
   .header-login{
-    height: auto;
-    line-height: 60px;
+    width: 120px;
+    margin-right: 0px;
+    margin-left: auto;
+    color: #ffffff;
     text-decoration: none;
-    display: inline-block;
-    float: left;
-    color: #fff;
-    text-align: center;
-  }
-  .header-login :hover{
-    background: #212121;
-  }
-  .header-login p{
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 24px;
-    padding-right: 24px;
     font-weight: bold;
   }
   .login-button-wrapper{
-    width: 118px;
+    width: 120px;
+    height: 60px;
     margin-left: auto;
     line-height: 60px;
-    cursor: pointer;
   }
-  .for-members{
-    font-size: 20px;
+  .credential-container p{
+    display: inline-block;
+    line-height: 60px;
+    padding-top: 2px;
+    font-weight: bold;
+    margin-left: 4px;
+    color: #fff;
+  }
+  .member-image{
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding-top: 16px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
   }
   #header{
     height: 60px;
