@@ -48,6 +48,9 @@ export default {
       axios({
         method: 'post',
         url: 'https://api-kqc.herokuapp.com/kqc-times/',
+        headers: {
+            'Content-Type': 'application/json'
+        },
         data: params
       }).then(response => {
         console.log(response.data);

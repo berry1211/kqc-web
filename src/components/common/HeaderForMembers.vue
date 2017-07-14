@@ -15,8 +15,8 @@
           <router-link to="/links" class="bar-content"><p>リンク</p></router-link>
         </div>
       </div>
-      <div class="login-button-wrapper">
-        <div class="credential-container">
+      <div class="login-button-wrapper" v-on:click="toMembersTop">
+        <div class="credential-container" >
           <img src="../../assets/ic_person_white_24dp.png" class="member-image" />
           <p>Members</p>
         </div>
@@ -32,8 +32,10 @@ export default {
     return {
     }
   },
-  created: function (){
-
+  methods: {
+    toMembersTop: function (event){
+      this.$router.push({ path: '/members' })
+    }
   }
 }
 </script>
