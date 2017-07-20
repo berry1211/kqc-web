@@ -38,7 +38,7 @@ export default {
         this.$router.push({ path: '/members' })
       }
       else if (password == '') {
-        alert('Invalid Password')
+        this.$router.push({ path: '/ooops'})
       } else {
 
       }
