@@ -3,7 +3,7 @@
     <div class="content-wrapper">
       <div class="copy-right-container">
         <p class="copy-right">
-          Copyright (c) 2017 Ha10 ( Yasunori Horii ). All Rights Reserved
+          Copyright (c) 2017 HALU5071 ( Yasunori Horii ). All Rights Reserved
         </p>
       </div>
     </div>

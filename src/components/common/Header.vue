@@ -37,10 +37,8 @@ export default {
       if (password == 'hogehoge') {
         this.$router.push({ path: '/members' })
       }
-      else if (password == '') {
+      else{
         this.$router.push({ path: '/ooops'})
-      } else {
-
       }
     }
   },
